@@ -4,6 +4,7 @@ import appData from "@data/app.json";
 import { useRouter } from 'next/router';
 import LanguageSwitcher from "@components/LanguageSwitcher";
 import { useSafeTranslation } from './../../../TranslationWrapper';
+import { sendEvent } from '@library/useTracking';
 
 const DefaultHeader = ({ extraClass }) => {
   const { t } = useSafeTranslation();
@@ -63,6 +64,7 @@ const DefaultHeader = ({ extraClass }) => {
         <div className="mil-top-panel-btns">
             <button
               onClick={() => {
+                sendEvent('cv_download');
                 import('@library/generateCV')
                   .then(({ generateCV }) => generateCV(currentLocale || 'en'))
                   .catch(() => window.location.reload());

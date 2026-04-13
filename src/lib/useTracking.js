@@ -21,8 +21,25 @@ function getSessionStart() {
   return Number(ts);
 }
 
-/* ── Fire-and-forget beacon ── */
+/* ── Fire-and-forget tracking ── */
 function sendEvent(event, data = {}) {
+  const visitorId = getVisitorId();
+  if (!visitorId) return;
+
+  const payload = { event, visitorId, ...data, ts: Date.now() };
+  const body = JSON.stringify(payload);
+
+  /* Use fetch for reliability; beacon only for unload events */
+  fetch('/api/track', {
+    method: 'POST',
+    headers: { 'Content-Type': 'application/json' },
+    body,
+    keepalive: true,
+  }).catch(() => {});
+}
+
+/* Beacon variant for beforeunload (fetch may be cancelled) */
+function sendBeaconEvent(event, data = {}) {
   const visitorId = getVisitorId();
   if (!visitorId) return;
 
@@ -33,13 +50,6 @@ function sendEvent(event, data = {}) {
       '/api/track',
       new Blob([JSON.stringify(payload)], { type: 'application/json' })
     );
-  } else {
-    fetch('/api/track', {
-      method: 'POST',
-      headers: { 'Content-Type': 'application/json' },
-      body: JSON.stringify(payload),
-      keepalive: true,
-    }).catch(() => {});
   }
 }
 
@@ -60,7 +70,7 @@ export function useTracking() {
       const start = getSessionStart();
       if (start) {
         const duration = Math.round((Date.now() - start) / 1000);
-        sendEvent('session_end', { duration });
+        sendBeaconEvent('session_end', { duration });
       }
     };
 
