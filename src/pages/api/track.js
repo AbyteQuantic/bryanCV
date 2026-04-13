@@ -2,6 +2,11 @@ import { getRedis } from '@library/redis';
 
 const HOT_LEAD_THRESHOLD_SECONDS = 120;
 
+function parseDevice(ua) {
+  if (!ua) return 'unknown';
+  return /mobile|android|iphone|ipad|ipod/i.test(ua) ? 'mobile' : 'desktop';
+}
+
 export default async function handler(req, res) {
   if (req.method !== 'POST') {
     return res.status(405).json({ error: 'Method not allowed' });
@@ -20,8 +25,21 @@ export default async function handler(req, res) {
 
   const today = new Date().toISOString().slice(0, 10);
 
+  /* Extract geo & device from headers */
+  const country =
+    req.headers['x-vercel-ip-country'] ||
+    req.headers['cf-ipcountry'] ||
+    'unknown';
+  const device = parseDevice(req.headers['user-agent']);
+
   try {
     const pipe = redis.pipeline();
+
+    /* Always track geo & device on any event */
+    if (country && country !== 'unknown') {
+      pipe.zincrby('metrics:countries', 1, country);
+    }
+    pipe.zincrby('metrics:devices', 1, device);
 
     switch (event) {
       case 'page_view':
@@ -40,14 +58,18 @@ export default async function handler(req, res) {
             JSON.stringify({
               q: question.slice(0, 500),
               vid: visitorId.slice(0, 8),
+              country,
+              device,
               at: new Date().toISOString(),
             })
           );
           pipe.ltrim('metrics:chat_questions', 0, 49);
-          /* Chatting = engaged visitor → potential hot lead */
+          pipe.incr('metrics:chat_interactions');
           pipe.sadd('metrics:hot_leads', visitorId);
           pipe.hset(`metrics:lead:${visitorId}`, {
             chatted: 'true',
+            country,
+            device,
             lastSeen: new Date().toISOString(),
           });
         }
@@ -56,10 +78,11 @@ export default async function handler(req, res) {
       case 'cv_download':
         pipe.incr('metrics:cv_downloads');
         pipe.incr(`metrics:cv_downloads:${today}`);
-        /* CV download = definitely a hot lead */
         pipe.sadd('metrics:hot_leads', visitorId);
         pipe.hset(`metrics:lead:${visitorId}`, {
           downloadedCV: 'true',
+          country,
+          device,
           lastSeen: new Date().toISOString(),
         });
         break;
@@ -68,11 +91,12 @@ export default async function handler(req, res) {
         if (typeof duration === 'number') {
           pipe.lpush('metrics:session_durations', duration);
           pipe.ltrim('metrics:session_durations', 0, 199);
-          /* Long session = hot lead */
           if (duration >= HOT_LEAD_THRESHOLD_SECONDS) {
             pipe.sadd('metrics:hot_leads', visitorId);
             pipe.hset(`metrics:lead:${visitorId}`, {
               longSession: String(duration),
+              country,
+              device,
               lastSeen: new Date().toISOString(),
             });
           }

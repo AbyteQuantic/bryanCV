@@ -1,11 +1,19 @@
 import { getRedis } from '@library/redis';
 
+function parseSortedSet(raw) {
+  if (!raw || !raw.length) return [];
+  const result = [];
+  for (let i = 0; i < raw.length; i += 2) {
+    result.push({ name: raw[i], value: Number(raw[i + 1]) || 0 });
+  }
+  return result;
+}
+
 export default async function handler(req, res) {
   if (req.method !== 'GET') {
     return res.status(405).json({ error: 'Method not allowed' });
   }
 
-  /* Validate session cookie */
   const token = req.cookies?.admin_session;
   const adminPassword = process.env.ADMIN_PASSWORD;
 
@@ -24,16 +32,7 @@ export default async function handler(req, res) {
 
   const redis = getRedis();
   if (!redis) {
-    return res.status(200).json({
-      pageViews: 0,
-      cvDownloads: 0,
-      chatQuestions: [],
-      sections: [],
-      avgSessionDuration: 0,
-      hotLeadsCount: 0,
-      uniqueVisitorsToday: 0,
-      noRedis: true,
-    });
+    return res.status(200).json({ noRedis: true });
   }
 
   try {
@@ -42,8 +41,11 @@ export default async function handler(req, res) {
     const [
       pageViews,
       cvDownloads,
+      chatInteractions,
       chatQuestions,
       sections,
+      countries,
+      devices,
       sessionDurations,
       hotLeadsCount,
       uniqueVisitorsToday,
@@ -52,8 +54,11 @@ export default async function handler(req, res) {
     ] = await Promise.all([
       redis.get('metrics:page_views'),
       redis.get('metrics:cv_downloads'),
-      redis.lrange('metrics:chat_questions', 0, 19),
+      redis.get('metrics:chat_interactions'),
+      redis.lrange('metrics:chat_questions', 0, 24),
       redis.zrange('metrics:sections', 0, -1, { withScores: true, rev: true }),
+      redis.zrange('metrics:countries', 0, -1, { withScores: true, rev: true }),
+      redis.zrange('metrics:devices', 0, -1, { withScores: true, rev: true }),
       redis.lrange('metrics:session_durations', 0, 99),
       redis.scard('metrics:hot_leads'),
       redis.scard(`metrics:visitors:${today}`),
@@ -61,7 +66,9 @@ export default async function handler(req, res) {
       redis.get(`metrics:cv_downloads:${today}`),
     ]);
 
-    /* Parse chat questions */
+    const pv = Number(pageViews) || 0;
+    const dl = Number(cvDownloads) || 0;
+
     const parsedQuestions = (chatQuestions || []).map((q) => {
       try {
         return typeof q === 'string' ? JSON.parse(q) : q;
@@ -70,18 +77,6 @@ export default async function handler(req, res) {
       }
     });
 
-    /* Parse sections sorted set */
-    const parsedSections = [];
-    if (sections && sections.length) {
-      for (let i = 0; i < sections.length; i += 2) {
-        parsedSections.push({
-          name: sections[i],
-          views: Number(sections[i + 1]) || 0,
-        });
-      }
-    }
-
-    /* Average session duration */
     const durations = (sessionDurations || []).map(Number).filter(Boolean);
     const avgSessionDuration =
       durations.length > 0
@@ -89,10 +84,14 @@ export default async function handler(req, res) {
         : 0;
 
     return res.status(200).json({
-      pageViews: Number(pageViews) || 0,
-      cvDownloads: Number(cvDownloads) || 0,
+      pageViews: pv,
+      cvDownloads: dl,
+      chatInteractions: Number(chatInteractions) || 0,
+      conversionRate: pv > 0 ? ((dl / pv) * 100).toFixed(1) : '0.0',
       chatQuestions: parsedQuestions,
-      sections: parsedSections,
+      sections: parseSortedSet(sections),
+      countries: parseSortedSet(countries),
+      devices: parseSortedSet(devices),
       avgSessionDuration,
       hotLeadsCount: Number(hotLeadsCount) || 0,
       uniqueVisitorsToday: Number(uniqueVisitorsToday) || 0,
