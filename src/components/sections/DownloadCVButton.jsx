@@ -44,9 +44,9 @@ const DownloadCVButton = () => {
           <motion.button
             onClick={() => {
               sendEvent('cv_download');
-              import('@library/generateCV').then(({ generateCV }) =>
-                generateCV(isEs ? 'es' : 'en')
-              );
+              import('@library/generateCV')
+                .then(({ generateCV }) => generateCV(isEs ? 'es' : 'en'))
+                .catch(() => window.location.reload());
             }}
             style={s.button}
             whileHover={{

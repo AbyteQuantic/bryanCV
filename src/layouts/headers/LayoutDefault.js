@@ -63,7 +63,9 @@ const DefaultHeader = ({ extraClass }) => {
         <div className="mil-top-panel-btns">
             <button
               onClick={() => {
-                import('@library/generateCV').then(({ generateCV }) => generateCV(currentLocale || 'en'));
+                import('@library/generateCV')
+                  .then(({ generateCV }) => generateCV(currentLocale || 'en'))
+                  .catch(() => window.location.reload());
               }}
               className="mil-cv-download"
             >
