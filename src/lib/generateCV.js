@@ -82,6 +82,7 @@ const i18nData = {
       ['SiembraCo (AgriTech)', 'Crop rental marketplace with real-time geolocation, WebSocket tracking, satellite imagery and ROI projections. NestJS + Python pipeline.'],
       ['Princess XV', 'Interactive event platform with 3D scroll animations (GSAP, Three.js), AI photo booth, real-time WebSocket voting. 200+ concurrent users.'],
       ['FacturApp (FinTech)', 'DIAN-compliant e-invoicing. UBL 2.1 XML, X.509 signing, automated tax calculations, PDF + WhatsApp delivery. Multi-tenant B2B.'],
+      ['bryanCV (AI Portfolio)', 'Intelligent portfolio with AI chatbot (Gemini), recruiter dashboard (Upstash Redis + Recharts), dynamic PDF CV (jsPDF), telemetry, hot lead detection. Next.js 15, Framer Motion, Vercel. Live: brayanmurcia.lat'],
     ],
     educationTitle: 'Education & Certifications',
     education: [
@@ -158,6 +159,7 @@ const i18nData = {
       ['SiembraCo (AgriTech)', 'Marketplace de cultivos con geolocalizacion en tiempo real, tracking WebSocket, imagenes satelitales y proyecciones ROI. NestJS + Python.'],
       ['Princess XV', 'Plataforma interactiva con animaciones 3D (GSAP, Three.js), photo booth IA, votacion WebSocket en tiempo real. 200+ usuarios concurrentes.'],
       ['FacturApp (FinTech)', 'Facturacion electronica DIAN. XML UBL 2.1, firma X.509, calculos fiscales automaticos, entrega PDF + WhatsApp. Multi-tenant B2B.'],
+      ['bryanCV (Portafolio IA)', 'Portafolio inteligente con chatbot IA (Gemini), dashboard de reclutadores (Upstash Redis + Recharts), CV PDF dinamico (jsPDF), telemetria, deteccion de hot leads. Next.js 15, Framer Motion, Vercel. Live: brayanmurcia.lat'],
     ],
     educationTitle: 'Educacion & Certificaciones',
     education: [
