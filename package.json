@@ -22,7 +22,7 @@
     "gsap": "^3.11.5",
     "jspdf": "^4.2.1",
     "lucide-react": "^1.7.0",
-    "next": "^15.3.3",
+    "next": "15.3.8",
     "parallax-js": "^3.1.0",
     "react": "18.2.0",
     "react-dom": "18.2.0",
