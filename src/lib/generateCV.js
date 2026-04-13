@@ -19,7 +19,7 @@ const i18nData = {
   en: {
     role: 'Senior DevOps Lead & AI-Augmented Architect',
     contactLines: [
-      'abytecorp@gmail.com  |  brayanmurcia.lat  |  Colombia',
+      'abytecorp@gmail.com  |  +57 322 312 1409  |  brayanmurcia.lat  |  Colombia',
       'linkedin.com/in/brayan-murcia  |  github.com/AbyteQuantic  |  English B1  |  15+ years',
     ],
     links: {
@@ -27,6 +27,7 @@ const i18nData = {
       linkedin: { text: 'linkedin.com/in/brayan-murcia', url: 'https://www.linkedin.com/in/brayan-murcia/' },
       github: { text: 'github.com/AbyteQuantic', url: 'https://github.com/AbyteQuantic' },
       email: { text: 'abytecorp@gmail.com', url: 'mailto:abytecorp@gmail.com' },
+      phone: { text: '+57 322 312 1409', url: 'https://wa.me/573223121409' },
     },
     summaryTitle: 'Professional Summary',
     summary: 'Senior DevOps Lead & AI Architect with 15+ years of experience. From CTO & Co-Founder (9 years building A_Byte Corp) to infrastructure leader at Chiper, a high-growth Series B startup operating across Colombia, Mexico and Brazil. Expert in Cloud orchestration (GCP, Kubernetes, Terraform) and pioneer in integrating Agentic AI into the SDLC, achieving a 60% reduction in Time-to-Market while maintaining 99.9% platform uptime for multi-country operations serving 50K+ daily transactions.',
@@ -94,7 +95,7 @@ const i18nData = {
   es: {
     role: 'Senior DevOps Lead & Arquitecto AI-Augmented',
     contactLines: [
-      'abytecorp@gmail.com  |  brayanmurcia.lat  |  Colombia',
+      'abytecorp@gmail.com  |  +57 322 312 1409  |  brayanmurcia.lat  |  Colombia',
       'linkedin.com/in/brayan-murcia  |  github.com/AbyteQuantic  |  Ingles B1  |  15+ anos',
     ],
     links: {
@@ -102,6 +103,7 @@ const i18nData = {
       linkedin: { text: 'linkedin.com/in/brayan-murcia', url: 'https://www.linkedin.com/in/brayan-murcia/' },
       github: { text: 'github.com/AbyteQuantic', url: 'https://github.com/AbyteQuantic' },
       email: { text: 'abytecorp@gmail.com', url: 'mailto:abytecorp@gmail.com' },
+      phone: { text: '+57 322 312 1409', url: 'https://wa.me/573223121409' },
     },
     summaryTitle: 'Perfil Profesional',
     summary: 'Senior DevOps Lead & Arquitecto AI con mas de 15 anos de trayectoria. De CTO & Co-Fundador (9 anos construyendo A_Byte Corp) a lider de infraestructura en Chiper, startup Serie B operando en Colombia, Mexico y Brasil. Experto en orquestacion Cloud (GCP, Kubernetes, Terraform) y pionero en la integracion de IA Agentica en el SDLC, logrando una reduccion del 60% en el Time-to-Market manteniendo 99.9% de uptime con 50K+ transacciones diarias.',
@@ -252,7 +254,7 @@ export function generateCV(lang = 'en') {
 
   /* Clickable links in header */
   const lk = d.links;
-  [lk.email, lk.site, lk.linkedin, lk.github].forEach((link) => {
+  [lk.email, lk.phone, lk.site, lk.linkedin, lk.github].forEach((link) => {
     /* Find text position in contact lines to add link annotation */
     for (let lineIdx = 0; lineIdx < d.contactLines.length; lineIdx++) {
       const lineY = lineIdx === 0 ? 38 : 44;
