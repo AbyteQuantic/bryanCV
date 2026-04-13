@@ -66,6 +66,21 @@ export default async function handler(req, res) {
       redis.get(`metrics:cv_downloads:${today}`),
     ]);
 
+    /* Fetch last 7 days of daily views */
+    const last7 = [];
+    for (let i = 6; i >= 0; i--) {
+      const d = new Date();
+      d.setDate(d.getDate() - i);
+      last7.push(d.toISOString().slice(0, 10));
+    }
+    const dailyViewsRaw = await Promise.all(
+      last7.map((day) => redis.get(`metrics:page_views:${day}`))
+    );
+    const dailyViews = last7.map((day, i) => ({
+      date: day,
+      views: Number(dailyViewsRaw[i]) || 0,
+    }));
+
     const pv = Number(pageViews) || 0;
     const dl = Number(cvDownloads) || 0;
 
@@ -97,6 +112,7 @@ export default async function handler(req, res) {
       uniqueVisitorsToday: Number(uniqueVisitorsToday) || 0,
       todayViews: Number(todayViews) || 0,
       todayDownloads: Number(todayDownloads) || 0,
+      dailyViews,
     });
   } catch {
     return res.status(500).json({ error: 'Failed to fetch metrics' });

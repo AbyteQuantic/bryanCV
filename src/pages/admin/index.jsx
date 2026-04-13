@@ -96,6 +96,16 @@ const AdminDashboard = () => {
             <KpiCard label="Avg. Session" value={fmt(data?.avgSessionDuration)} sub={`${data?.uniqueVisitorsToday || 0} visitors today`} color="#6b7280" />
           </div>
 
+          {/* Traffic History */}
+          <div style={{ ...s.card, marginBottom: '16px' }}>
+            <h3 style={s.cardTitle}>📈 Traffic History (Last 7 Days)</h3>
+            {data?.dailyViews?.some((d) => d.views > 0) ? (
+              <RechartsCharts type="area" data={data.dailyViews} />
+            ) : (
+              <p style={s.empty}>Traffic data will appear after a few days of visits.</p>
+            )}
+          </div>
+
           {/* Charts */}
           <div style={s.twoCol}>
             <div style={s.card}>

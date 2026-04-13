@@ -21,6 +21,7 @@ const SUGGESTIONS = {
 };
 
 const TOOLTIP_DELAY = 3000;
+const TOOLTIP_AUTO_DISMISS = 10000;
 const TOOLTIP_ROTATE_INTERVAL = 6000;
 const MOUSE_RANGE = 5;
 
@@ -75,6 +76,16 @@ const ChrisAvatarButton = ({ onClick, isOpen }) => {
     }, TOOLTIP_ROTATE_INTERVAL);
     return () => clearInterval(interval);
   }, [showTooltip, suggestions.length]);
+
+  /* ── Auto-dismiss tooltip after 10s ── */
+  useEffect(() => {
+    if (!showTooltip) return;
+    const timer = setTimeout(() => {
+      setShowTooltip(false);
+      setDismissed(true);
+    }, TOOLTIP_AUTO_DISMISS);
+    return () => clearTimeout(timer);
+  }, [showTooltip]);
 
   /* ── Hide tooltip on scroll ── */
   useEffect(() => {
