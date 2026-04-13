@@ -1,0 +1,65 @@
+{
+    "title": "DevOps, Cloud & Backend",
+    "items": [
+        {
+            "label": "Docker & Kubernetes",
+            "labelEs": "Docker & Kubernetes",
+            "value": "90"
+        },
+        {
+            "label": "CI/CD (GitHub Actions / GitLab CI)",
+            "labelEs": "CI/CD (GitHub Actions / GitLab CI)",
+            "value": "92"
+        },
+        {
+            "label": "GCP (Cloud Run, Pub/Sub, GCS)",
+            "labelEs": "GCP (Cloud Run, Pub/Sub, GCS)",
+            "value": "88"
+        },
+        {
+            "label": "Terraform & IaC",
+            "labelEs": "Terraform & IaC",
+            "value": "75"
+        },
+        {
+            "label": "Node.js & NestJS",
+            "labelEs": "Node.js & NestJS",
+            "value": "95"
+        },
+        {
+            "label": "Python",
+            "labelEs": "Python",
+            "value": "78"
+        },
+        {
+            "label": "MySQL & PostgreSQL",
+            "labelEs": "MySQL & PostgreSQL",
+            "value": "88"
+        },
+        {
+            "label": "MongoDB & Redis",
+            "labelEs": "MongoDB & Redis",
+            "value": "80"
+        },
+        {
+            "label": "Elasticsearch",
+            "labelEs": "Elasticsearch",
+            "value": "72"
+        },
+        {
+            "label": "Linux Administration",
+            "labelEs": "Administraci\u00f3n Linux",
+            "value": "85"
+        },
+        {
+            "label": "Microservices & Event-Driven",
+            "labelEs": "Microservicios & Event-Driven",
+            "value": "90"
+        },
+        {
+            "label": "Go",
+            "labelEs": "Go",
+            "value": "55"
+        }
+    ]
+}

@@ -1,0 +1,23 @@
+{
+    "title": "Core Competencies",
+    "items": [
+        {
+            "title": "DevOps & Cloud",
+            "icon": "/img/icons/nestjs.svg",
+            "text": "Production infrastructure on GCP and AWS with Docker, Kubernetes and Terraform. CI/CD pipelines and multi-country deployments with high availability.",
+            "link": "/services/service-1"
+        },
+        {
+            "title": "AI-Augmented Dev",
+            "icon": "/img/icons/react.svg",
+            "text": "AI-Assisted workflows with Claude Code and Cursor accelerating delivery by 60%. Agentic pipelines for code generation, review and deployment.",
+            "link": "/services/service-2"
+        },
+        {
+            "title": "Legacy to Microservices",
+            "icon": "/img/icons/python.svg",
+            "text": "Monolith-to-NestJS migrations (from LoopBack 3) with saga patterns, event-driven systems (Pub/Sub) and progressive decoupling without downtime.",
+            "link": "/services/service-3"
+        }
+    ]
+}

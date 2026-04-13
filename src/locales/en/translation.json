@@ -1,0 +1,48 @@
+{
+    "Home": "Home",
+    "Projects": "Projects",
+    "Blog": "Blog",
+    "Contact": "Contact",
+    "Other": "Other",
+    "Default": "Default",
+    "Full width homepage": "Full width homepage",
+    "Portfolio slider": "Portfolio slider",
+    "Princess XV": "Princess XV",
+    "VendIA": "VendIA",
+    "SiembraCo": "SiembraCo",
+    "FacturApp": "FacturApp",
+    "Blog list": "Blog list",
+    "Publication": "Publication",
+    "Full width Publication": "Full width Publication",
+    "Story timeline": "Story timeline",
+    "Services": "Core Competencies",
+    "Single Service": "Single Service",
+    "404": "404",
+    "HeroOneSection": {
+        "FirstGreeting": "Hello, my name is",
+        "CarreerDescription": "DevOps Lead & AI-Augmented Architect",
+        "ScrollDown": "Scroll down - Scroll down - "
+    },
+    "About": {
+        "Title": "DevOps Lead & AI-Augmented Architect with 15+ years driving platform scalability, legacy modernization and accelerated delivery across Latin America.",
+        "Description": "From CTO & Co-Founder to DevOps Lead at high-growth startups operating across Colombia, Mexico and Brazil. I orchestrate the full SDLC, lead monolith-to-microservices migrations and leverage AI-Assisted Development (Claude Code, Cursor) to multiply team velocity on critical Backend and Cloud deliverables without sacrificing stability or quality."
+    },
+    "ServicesSection": {
+        "title": "Core Competencies",
+        "Title0": "DevOps & Cloud",
+        "text0": "Production infrastructure on GCP and AWS with Docker, Kubernetes and Terraform. CI/CD pipelines and multi-country deployments with high availability.",
+        "Title1": "AI-Augmented Dev",
+        "text1": "AI-Assisted workflows with Claude Code and Cursor accelerating delivery by 60%. Agentic pipelines for code generation, review and deployment.",
+        "Title2": "Legacy to Microservices",
+        "text2": "Monolith-to-NestJS migrations (from LoopBack 3) with saga patterns, event-driven systems (Pub/Sub) and progressive decoupling without downtime."
+    },
+    "ProgrammingLanguagesSkills": {
+        "title": "DevOps, Cloud & Backend"
+    },
+    "TestingLeadershipSkill": {
+        "title": "AI, QA & Leadership"
+    },
+    "DegreesSection": {
+        "title": "Certifications & Continuous Learning"
+    }
+}

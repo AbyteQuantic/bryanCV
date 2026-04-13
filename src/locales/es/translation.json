@@ -1,0 +1,43 @@
+{
+    "Home": "Inicio",
+    "Projects": "Proyectos",
+    "Contact": "Contacto",
+    "Other": "Otros",
+    "Default": "Por defecto",
+    "Full width homepage": "P\u00e1gina de inicio completa",
+    "Portfolio slider": "Diapositivas de portafolio",
+    "Princess XV": "Princess XV",
+    "VendIA": "VendIA",
+    "SiembraCo": "SiembraCo",
+    "FacturApp": "FacturApp",
+    "Story timeline": "Trayectoria",
+    "Services": "Competencias Clave",
+    "404": "404",
+    "HeroOneSection": {
+        "FirstGreeting": "Hola, mi nombre es",
+        "CarreerDescription": "L\u00edder DevOps & Arquitecto Potenciado por IA",
+        "ScrollDown": "Desplazar - Desplazar - "
+    },
+    "About": {
+        "Title": "L\u00edder DevOps & Arquitecto Potenciado por IA con 15+ a\u00f1os impulsando escalabilidad de plataformas, modernizaci\u00f3n de sistemas legacy y entregas aceleradas en Latinoam\u00e9rica.",
+        "Description": "De CTO & Co-Fundador a L\u00edder DevOps en startups de alto crecimiento operando en Colombia, M\u00e9xico y Brasil. Orquesto el SDLC completo, lidero migraciones de monolito a microservicios y potencio el desarrollo con IA (Claude Code, Cursor) para multiplicar la velocidad del equipo en entregas cr\u00edticas de Backend y Cloud sin sacrificar estabilidad ni calidad."
+    },
+    "ServicesSection": {
+        "title": "Competencias Clave",
+        "Title0": "DevOps & Cloud",
+        "text0": "Infraestructura en GCP y AWS con Docker, Kubernetes y Terraform. Pipelines CI/CD y despliegues multi-pa\u00eds con alta disponibilidad.",
+        "Title1": "Desarrollo con IA",
+        "text1": "Flujos AI-Assisted con Claude Code y Cursor que aceleran entregas en un 60%. Pipelines ag\u00e9nticos de c\u00f3digo, review y despliegue.",
+        "Title2": "Legacy a Microservicios",
+        "text2": "Migraciones de monolito (LoopBack 3) a NestJS con patrones saga, event-driven (Pub/Sub) y desacoplamiento progresivo sin afectar producci\u00f3n."
+    },
+    "ProgrammingLanguagesSkills": {
+        "title": "DevOps, Cloud & Backend"
+    },
+    "TestingLeadershipSkill": {
+        "title": "IA, QA & Liderazgo"
+    },
+    "DegreesSection": {
+        "title": "Certificaciones & Aprendizaje Continuo"
+    }
+}

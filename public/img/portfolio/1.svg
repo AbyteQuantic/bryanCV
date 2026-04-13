@@ -1,0 +1,32 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="800" height="500" viewBox="0 0 800 500">
+  <defs>
+    <linearGradient id="bg1" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#0a0a0a"/>
+      <stop offset="50%" style="stop-color:#1a1a2e"/>
+      <stop offset="100%" style="stop-color:#16213e"/>
+    </linearGradient>
+    <filter id="blur1"><feGaussianBlur stdDeviation="40"/></filter>
+  </defs>
+  <rect width="800" height="500" fill="url(#bg1)"/>
+  <circle cx="700" cy="50" r="150" fill="#e91e8f" opacity="0.3" filter="url(#blur1)"/>
+  <circle cx="100" cy="450" r="120" fill="#ffd700" opacity="0.25" filter="url(#blur1)"/>
+  <text x="400" y="180" text-anchor="middle" fill="#ffd700" font-family="system-ui,sans-serif" font-size="60" opacity="0.9">&#10024;</text>
+  <text x="400" y="260" text-anchor="middle" fill="white" font-family="system-ui,sans-serif" font-size="48" font-weight="700">Princess XV</text>
+  <text x="400" y="310" text-anchor="middle" fill="white" font-family="system-ui,sans-serif" font-size="20" opacity="0.8">Interactive Quinceañera Platform</text>
+  <g transform="translate(200,360)">
+    <rect x="0" y="0" width="80" height="30" rx="15" fill="rgba(255,255,255,0.15)"/>
+    <text x="40" y="20" text-anchor="middle" fill="#ffd700" font-family="system-ui,sans-serif" font-size="12">Next.js</text>
+  </g>
+  <g transform="translate(290,360)">
+    <rect x="0" y="0" width="120" height="30" rx="15" fill="rgba(255,255,255,0.15)"/>
+    <text x="60" y="20" text-anchor="middle" fill="#ffd700" font-family="system-ui,sans-serif" font-size="12">3D Animations</text>
+  </g>
+  <g transform="translate(420,360)">
+    <rect x="0" y="0" width="110" height="30" rx="15" fill="rgba(255,255,255,0.15)"/>
+    <text x="55" y="20" text-anchor="middle" fill="#ffd700" font-family="system-ui,sans-serif" font-size="12">AI Photo FX</text>
+  </g>
+  <g transform="translate(540,360)">
+    <rect x="0" y="0" width="100" height="30" rx="15" fill="rgba(255,255,255,0.15)"/>
+    <text x="50" y="20" text-anchor="middle" fill="#ffd700" font-family="system-ui,sans-serif" font-size="12">iTunes API</text>
+  </g>
+</svg>

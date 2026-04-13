@@ -1,0 +1,35 @@
+{
+    "title": "AI, QA & Leadership",
+    "items": [
+        {
+            "label": "Claude Code & Cursor (AI Dev)",
+            "labelEs": "Claude Code & Cursor (Dev IA)",
+            "value": "95"
+        },
+        {
+            "label": "Prompt Engineering & AI Agents",
+            "labelEs": "Prompt Engineering & Agentes IA",
+            "value": "90"
+        },
+        {
+            "label": "Selenium & Appium",
+            "labelEs": "Selenium & Appium",
+            "value": "92"
+        },
+        {
+            "label": "Pytest & E2E Automation",
+            "labelEs": "Pytest & Automatizaci\u00f3n E2E",
+            "value": "88"
+        },
+        {
+            "label": "Agile Leadership & SDLC",
+            "labelEs": "Liderazgo \u00c1gil & SDLC",
+            "value": "90"
+        },
+        {
+            "label": "Tech Debt & Stakeholder Mgmt",
+            "labelEs": "Deuda T\u00e9cnica & Gesti\u00f3n de Stakeholders",
+            "value": "85"
+        }
+    ]
+}

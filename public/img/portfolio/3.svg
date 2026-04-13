@@ -1,0 +1,31 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="800" height="500" viewBox="0 0 800 500">
+  <defs>
+    <linearGradient id="bg3" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#134e5e"/>
+      <stop offset="100%" style="stop-color:#71b280"/>
+    </linearGradient>
+    <filter id="blur3"><feGaussianBlur stdDeviation="40"/></filter>
+  </defs>
+  <rect width="800" height="500" fill="url(#bg3)"/>
+  <circle cx="700" cy="50" r="150" fill="#f6d365" opacity="0.25" filter="url(#blur3)"/>
+  <circle cx="100" cy="450" r="120" fill="#2d6a4f" opacity="0.3" filter="url(#blur3)"/>
+  <text x="400" y="180" text-anchor="middle" fill="white" font-family="system-ui,sans-serif" font-size="60" opacity="0.9">&#127793;</text>
+  <text x="400" y="260" text-anchor="middle" fill="white" font-family="system-ui,sans-serif" font-size="48" font-weight="700">SiembraCo</text>
+  <text x="400" y="310" text-anchor="middle" fill="white" font-family="system-ui,sans-serif" font-size="20" opacity="0.85">Smart Crop Rental &amp; Monitoring</text>
+  <g transform="translate(185,360)">
+    <rect x="0" y="0" width="110" height="30" rx="15" fill="rgba(255,255,255,0.2)"/>
+    <text x="55" y="20" text-anchor="middle" fill="#f6d365" font-family="system-ui,sans-serif" font-size="12">Geolocation</text>
+  </g>
+  <g transform="translate(305,360)">
+    <rect x="0" y="0" width="120" height="30" rx="15" fill="rgba(255,255,255,0.2)"/>
+    <text x="60" y="20" text-anchor="middle" fill="#f6d365" font-family="system-ui,sans-serif" font-size="12">Real-time IoT</text>
+  </g>
+  <g transform="translate(435,360)">
+    <rect x="0" y="0" width="90" height="30" rx="15" fill="rgba(255,255,255,0.2)"/>
+    <text x="45" y="20" text-anchor="middle" fill="#f6d365" font-family="system-ui,sans-serif" font-size="12">Node.js</text>
+  </g>
+  <g transform="translate(535,360)">
+    <rect x="0" y="0" width="110" height="30" rx="15" fill="rgba(255,255,255,0.2)"/>
+    <text x="55" y="20" text-anchor="middle" fill="#f6d365" font-family="system-ui,sans-serif" font-size="12">WebSockets</text>
+  </g>
+</svg>

@@ -1,0 +1,95 @@
+{
+    "settings": {
+        "siteName": "..::Brayan Murcia::..",
+        "formspreeURL": "https://formspree.io/f/xayrqjgq",
+        "mailchimp": {
+            "url": "",
+            "key": ""
+        }
+    },
+    "header": {
+        "logo": {
+            "symbol": "D",
+            "link": "/"
+        },
+        "button": {
+            "link": "/contact"
+        },
+        "menu": [
+            {
+                "label": "Home",
+                "link": "/",
+                "children": 0
+            },
+            {
+                "label": "Projects",
+                "link": "/projects",
+                "children": [
+                    {
+                        "label": "Princess XV",
+                        "link": "/projects/project-1"
+                    },
+                    {
+                        "label": "VendIA",
+                        "link": "/projects/project-2"
+                    },
+                    {
+                        "label": "SiembraCo",
+                        "link": "/projects/project-3"
+                    },
+                    {
+                        "label": "FacturApp",
+                        "link": "/projects/project-4"
+                    }
+                ]
+            },
+            {
+                "label": "Contact",
+                "link": "/contact",
+                "children": 0
+            },
+            {
+                "label": "Other",
+                "link": "/story",
+                "children": [
+                    {
+                        "label": "Story timeline",
+                        "link": "/story"
+                    },
+                    {
+                        "label": "Services",
+                        "link": "/services"
+                    }
+                ]
+            }
+        ]
+    },
+    "footer": {
+        "copy": "\u00a9 2026. Brayan Murcia. All rights reserved.",
+        "copyEs": "\u00a9 2026. Brayan Murcia. Todos los derechos reservados.",
+        "dev": "DevOps Lead &amp; AI-Augmented Architect",
+        "devEs": "L\u00edder DevOps &amp; Arquitecto Potenciado por IA"
+    },
+    "social": [
+        {
+            "link": "https://behance.net",
+            "icon": "fab fa-behance",
+            "title": "Behance"
+        },
+        {
+            "link": "https://dribbble.com",
+            "icon": "fab fa-dribbble",
+            "title": "Dribbble"
+        },
+        {
+            "link": "https://twitter.com",
+            "icon": "fab fa-twitter",
+            "title": "Twitter"
+        },
+        {
+            "link": "https://github.com/AbyteQuantic",
+            "icon": "fab fa-github",
+            "title": "Github"
+        }
+    ]
+}

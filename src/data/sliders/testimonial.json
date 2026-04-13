@@ -1,0 +1,166 @@
+{
+    "title": "Certifications & Continuous Learning",
+    "items": [
+        {
+            "name": "Node.js Backend Development",
+            "image": "/img/degrees/js.png",
+            "role": "BACKEND",
+            "text": "Backend Development with Node.js — Platzi Career Path, completed March 2020",
+            "link": "https://platzi.com/p/ImGroot/ruta/55-backend-javascript/diploma/detalle/"
+        },
+        {
+            "name": "Frontend Development with JavaScript",
+            "image": "/img/degrees/frontendjs.png",
+            "role": "FRONTEND",
+            "text": "Frontend Development with JavaScript — Platzi Career Path, completed October 2019",
+            "link": "https://platzi.com/p/ImGroot/curso/1651-react-ejs-2019/diploma/detalle/"
+        },
+        {
+            "name": "WebSockets, Pub/Sub & IoT Stack",
+            "image": "/img/degrees/pubsub-mqtt-testing-websockets.png",
+            "role": "BACKEND",
+            "text": "Real-time communication protocols and IoT integration — Platzi",
+            "link": "https://platzi.com/p/ImGroot/curso/1151-nodejs-iot/diploma/detalle/"
+        },
+        {
+            "name": "Professional JavaScript",
+            "image": "/img/degrees/javascriptPro.png",
+            "role": "BACKEND",
+            "text": "Advanced JavaScript patterns, closures, prototypes and async — Platzi",
+            "link": "https://platzi.com/p/ImGroot/curso/1642-javascript-profesional/diploma/detalle/"
+        },
+        {
+            "name": "Node.js Fundamentals",
+            "image": "/img/degrees/node.png",
+            "role": "BACKEND",
+            "text": "Core Node.js runtime, modules and event loop — Platzi",
+            "link": "https://platzi.com/p/ImGroot/curso/1642-javascript-profesional/diploma/detalle/"
+        },
+        {
+            "name": "React.js",
+            "image": "/img/degrees/react.png",
+            "role": "FRONTEND",
+            "text": "Component architecture, hooks and state management with React — Platzi",
+            "link": "https://platzi.com/p/ImGroot/curso/1642-javascript-profesional/diploma/detalle/"
+        },
+        {
+            "name": "React.js — Practical Course",
+            "image": "/img/degrees/reactjspractice.png",
+            "role": "FRONTEND",
+            "text": "Hands-on React application development — Platzi",
+            "link": "https://platzi.com/p/ImGroot/curso/1642-javascript-profesional/diploma/detalle/"
+        },
+        {
+            "name": "Express.js",
+            "image": "/img/degrees/expressjs.png",
+            "role": "BACKEND",
+            "text": "REST API design and middleware patterns with Express — Platzi",
+            "link": "https://platzi.com/p/ImGroot/curso/1642-javascript-profesional/diploma/detalle/"
+        },
+        {
+            "name": "Vue.js 2",
+            "image": "/img/degrees/vue2.png",
+            "role": "FRONTEND",
+            "text": "Reactive UI development with Vue.js — Platzi",
+            "link": "https://platzi.com/p/ImGroot/curso/1642-javascript-profesional/diploma/detalle/"
+        },
+        {
+            "name": "Python — Comprehensions, Functions & Error Handling",
+            "image": "/img/degrees/python-comprehensions-functions-errors.png",
+            "role": "AI & DATA",
+            "text": "Intermediate Python patterns for data pipelines — Platzi",
+            "link": "https://platzi.com/p/ImGroot/curso/1642-javascript-profesional/diploma/detalle/"
+        },
+        {
+            "name": "AI Fundamentals",
+            "image": "/img/degrees/AI_fundamental.png",
+            "role": "AI & DATA",
+            "text": "Machine Learning concepts, neural networks and AI applications — Platzi",
+            "link": "https://platzi.com/p/ImGroot/curso/1642-javascript-profesional/diploma/detalle/"
+        },
+        {
+            "name": "Data Engineering Fundamentals",
+            "image": "/img/degrees/data_ingineering.png",
+            "role": "AI & DATA",
+            "text": "ETL pipelines, data warehousing and BigQuery — Platzi",
+            "link": "https://platzi.com/p/ImGroot/curso/1642-javascript-profesional/diploma/detalle/"
+        },
+        {
+            "name": "Jupyter Notebooks",
+            "image": "/img/degrees/jupyter_notebooks.png",
+            "role": "AI & DATA",
+            "text": "Data analysis and visualization with Jupyter — Platzi",
+            "link": "https://platzi.com/p/ImGroot/curso/1642-javascript-profesional/diploma/detalle/"
+        },
+        {
+            "name": "Python Fundamentals",
+            "image": "/img/degrees/piezas-landing-fundamentos-python.png",
+            "role": "AI & DATA",
+            "text": "Core Python syntax, data structures and OOP — Platzi",
+            "link": "https://platzi.com/p/ImGroot/curso/1642-javascript-profesional/diploma/detalle/"
+        },
+        {
+            "name": "Agile Methodologies",
+            "image": "/img/degrees/agile.png",
+            "role": "LEADERSHIP",
+            "text": "Scrum, Kanban and agile team management — Platzi",
+            "link": "https://platzi.com/p/ImGroot/curso/1642-javascript-profesional/diploma/detalle/"
+        },
+        {
+            "name": "Product Management",
+            "image": "/img/degrees/badges-product-manager.png",
+            "role": "LEADERSHIP",
+            "text": "Product strategy, roadmapping and stakeholder alignment — Platzi",
+            "link": "https://platzi.com/p/ImGroot/curso/1642-javascript-profesional/diploma/detalle/"
+        },
+        {
+            "name": "Docker",
+            "image": "/img/degrees/docker.png",
+            "role": "DEVOPS",
+            "text": "Containerization, Docker Compose and multi-stage builds — Platzi",
+            "link": "https://platzi.com/p/ImGroot/curso/1642-javascript-profesional/diploma/detalle/"
+        },
+        {
+            "name": "English Communication Strategies",
+            "image": "/img/degrees/english_strategies.png",
+            "role": "LEADERSHIP",
+            "text": "Professional English for tech communication — Platzi",
+            "link": "https://platzi.com/p/ImGroot/curso/1642-javascript-profesional/diploma/detalle/"
+        },
+        {
+            "name": "Linux Server Administration",
+            "image": "/img/degrees/linux_server.png",
+            "role": "DEVOPS",
+            "text": "Server provisioning, security hardening and shell scripting — Platzi",
+            "link": "https://platzi.com/p/ImGroot/curso/1642-javascript-profesional/diploma/detalle/"
+        },
+        {
+            "name": "MongoDB",
+            "image": "/img/degrees/mongo.png",
+            "role": "BACKEND",
+            "text": "NoSQL data modeling, aggregation pipelines and replication — Platzi",
+            "link": "https://platzi.com/p/ImGroot/curso/1642-javascript-profesional/diploma/detalle/"
+        },
+        {
+            "name": "MySQL",
+            "image": "/img/degrees/mysql.png",
+            "role": "BACKEND",
+            "text": "Relational database design, query optimization and indexing — Platzi",
+            "link": "https://platzi.com/p/ImGroot/curso/1642-javascript-profesional/diploma/detalle/"
+        },
+        {
+            "name": "PHP",
+            "image": "/img/degrees/php.png",
+            "role": "BACKEND",
+            "text": "Server-side development with PHP and MVC patterns — Platzi",
+            "link": "https://platzi.com/p/ImGroot/curso/1642-javascript-profesional/diploma/detalle/"
+        },
+        {
+            "name": "Software Testing Fundamentals",
+            "image": "/img/degrees/testing_software.png",
+            "role": "QA",
+            "text": "Testing strategies, test planning and quality assurance foundations — Platzi",
+            "link": "https://platzi.com/p/ImGroot/curso/1642-javascript-profesional/diploma/detalle/"
+        }
+    ]
+}

@@ -1,0 +1,31 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="800" height="500" viewBox="0 0 800 500">
+  <defs>
+    <linearGradient id="bg4" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#1e3c72"/>
+      <stop offset="100%" style="stop-color:#2a5298"/>
+    </linearGradient>
+    <filter id="blur4"><feGaussianBlur stdDeviation="40"/></filter>
+  </defs>
+  <rect width="800" height="500" fill="url(#bg4)"/>
+  <circle cx="100" cy="50" r="150" fill="#00d2ff" opacity="0.25" filter="url(#blur4)"/>
+  <circle cx="700" cy="450" r="120" fill="#3a7bd5" opacity="0.3" filter="url(#blur4)"/>
+  <text x="400" y="180" text-anchor="middle" fill="white" font-family="system-ui,sans-serif" font-size="60" opacity="0.9">&#128196;</text>
+  <text x="400" y="260" text-anchor="middle" fill="white" font-family="system-ui,sans-serif" font-size="48" font-weight="700">FacturApp</text>
+  <text x="400" y="310" text-anchor="middle" fill="white" font-family="system-ui,sans-serif" font-size="20" opacity="0.85">Electronic Invoicing — DIAN Compliant</text>
+  <g transform="translate(175,360)">
+    <rect x="0" y="0" width="130" height="30" rx="15" fill="rgba(255,255,255,0.2)"/>
+    <text x="65" y="20" text-anchor="middle" fill="#7dd3fc" font-family="system-ui,sans-serif" font-size="12">DIAN Integration</text>
+  </g>
+  <g transform="translate(315,360)">
+    <rect x="0" y="0" width="90" height="30" rx="15" fill="rgba(255,255,255,0.2)"/>
+    <text x="45" y="20" text-anchor="middle" fill="#7dd3fc" font-family="system-ui,sans-serif" font-size="12">REST API</text>
+  </g>
+  <g transform="translate(415,360)">
+    <rect x="0" y="0" width="80" height="30" rx="15" fill="rgba(255,255,255,0.2)"/>
+    <text x="40" y="20" text-anchor="middle" fill="#7dd3fc" font-family="system-ui,sans-serif" font-size="12">Node.js</text>
+  </g>
+  <g transform="translate(505,360)">
+    <rect x="0" y="0" width="60" height="30" rx="15" fill="rgba(255,255,255,0.2)"/>
+    <text x="30" y="20" text-anchor="middle" fill="#7dd3fc" font-family="system-ui,sans-serif" font-size="12">B2B</text>
+  </g>
+</svg>
