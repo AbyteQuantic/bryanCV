@@ -68,6 +68,13 @@ const nextConfig = {
       },
     ];
   },
+
+  async rewrites() {
+    return [
+      { source: '/nzt', destination: 'https://nzt-limitless-next.vercel.app/nzt' },
+      { source: '/nzt/:path*', destination: 'https://nzt-limitless-next.vercel.app/nzt/:path*' },
+    ];
+  },
   
   experimental: {
     optimizeCss: false,
