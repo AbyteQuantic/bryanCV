@@ -73,6 +73,8 @@ const nextConfig = {
     return [
       { source: '/nzt', destination: 'https://nzt-limitless-next.vercel.app/nzt' },
       { source: '/nzt/:path*', destination: 'https://nzt-limitless-next.vercel.app/nzt/:path*' },
+      { source: '/vivo', destination: 'https://vivo-next.vercel.app/vivo' },
+      { source: '/vivo/:path*', destination: 'https://vivo-next.vercel.app/vivo/:path*' },
     ];
   },
   
