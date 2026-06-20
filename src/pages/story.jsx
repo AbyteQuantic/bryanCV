@@ -83,7 +83,7 @@ const experience = {
     {
       title: 'Chiper',
       period: '2022 \u2013 Present',
-      role: 'Senior Full Stack Developer & Solutions Architect (DevOps Lead)',
+      role: 'Full Stack Developer & Solutions Architect (DevOps Lead)',
       desc: 'Leading the renewal of the B2B e-commerce platform \u2014 decomposing the legacy monolith into clean Go microservices (Strangler Fig, REST/gRPC, Cloud Run). Previously led infrastructure, CI/CD and the monolith-to-microservices migration (LoopBack 3 \u2192 NestJS). Drove AI-Augmented workflows (Claude Code, Cursor) cutting feature delivery time by 60% while sustaining 99.9% uptime on GCP.',
       projects: [
         { name: 'ecommerce-renewal', detail: 'New Go microservices decomposing the B2B e-commerce monolith (2026)' },
@@ -118,7 +118,7 @@ const experience = {
     {
       title: 'Chiper',
       period: '2022 \u2013 Presente',
-      role: 'Senior Full Stack Developer & Arquitecto de Soluciones (DevOps Lead)',
+      role: 'Full Stack Developer & Arquitecto de Soluciones (DevOps Lead)',
       desc: 'Lidera la renovaci\u00f3n de la plataforma e-commerce B2B, descomponiendo el monolito legacy en microservicios limpios en Go (Strangler Fig, REST/gRPC, Cloud Run). Previamente lider\u00f3 infraestructura, CI/CD y la migraci\u00f3n de monolito a microservicios (LoopBack 3 \u2192 NestJS). Impuls\u00f3 flujos con IA (Claude Code, Cursor) reduciendo el tiempo de entrega en un 60% manteniendo 99.9% de uptime en GCP.',
       projects: [
         { name: 'ecommerce-renewal', detail: 'Nuevos microservicios en Go descomponiendo el monolito de e-commerce B2B (2026)' },
