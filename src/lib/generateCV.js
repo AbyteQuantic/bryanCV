@@ -52,7 +52,7 @@ const i18nData = {
           'Refactoring and decoupling critical monolith modules (catalog, cart, checkout) by carving out bounded contexts with the Strangler Fig pattern and async Pub/Sub messaging, guaranteeing zero-downtime, incremental migration.',
           'Designing and building new microservices in Go following Clean Architecture and SOLID principles \u2014 REST/gRPC APIs, high concurrency via goroutines, context-based cancellation and built-in observability (structured logging, metrics, distributed tracing).',
           'Enforcing rigorous quality gates: Go table-driven tests with 80%+ coverage, containerized builds and CI/CD pipelines that ship the new services to GCP Cloud Run safely and incrementally.',
-          'Driving the full-stack team (Go + React/Next.js) and accelerating delivery with AI-assisted development (Claude Code, Cursor), cutting e-commerce technical debt while raising code quality.',
+          'Delivering the e-commerce renewal as a lean 2-developer squad (Go + React/Next.js) with full end-to-end ownership, leveraging AI-assisted development (Claude Code, Cursor) to ship at scale while cutting technical debt and raising code quality.',
         ],
       },
       {
@@ -141,7 +141,7 @@ const i18nData = {
           'Depuro y desacoplo modulos criticos del monolito (catalogo, carrito, checkout) extrayendo bounded contexts con el patron Strangler Fig y mensajeria asincrona via Pub/Sub, garantizando una migracion incremental y sin downtime.',
           'Diseno y construyo nuevos microservicios en Go aplicando Clean Architecture y principios SOLID: APIs REST/gRPC, alta concurrencia con goroutines, cancelacion basada en context y observabilidad integrada (logging estructurado, metricas, tracing distribuido).',
           'Aseguro la calidad con quality gates exigentes: table-driven tests en Go con 80%+ de cobertura, builds containerizados y pipelines CI/CD que despliegan los nuevos servicios en GCP Cloud Run de forma segura e incremental.',
-          'Coordino al equipo full-stack (Go + React/Next.js) acelerando la entrega con desarrollo asistido por IA (Claude Code, Cursor), reduciendo la deuda tecnica del e-commerce y elevando la calidad del codigo.',
+          'Saco adelante la renovacion del e-commerce en un squad compacto de 2 desarrolladores (Go + React/Next.js) con ownership total de punta a punta, apalancando desarrollo asistido por IA (Claude Code, Cursor) para entregar a escala reduciendo la deuda tecnica y elevando la calidad del codigo.',
         ],
       },
       {
