@@ -17,7 +17,7 @@ const BULLET_INDENT = 8;
 
 const i18nData = {
   en: {
-    role: 'Senior DevOps Lead & AI-Augmented Architect',
+    role: 'Senior Full Stack Developer & AI-Augmented Solutions Architect',
     contactLines: [
       'abytecorp@gmail.com  |  +57 322 312 1409  |  brayanmurcia.lat  |  Colombia',
       'linkedin.com/in/brayan-murcia  |  github.com/AbyteQuantic  |  English B1  |  15+ years',
@@ -30,7 +30,7 @@ const i18nData = {
       phone: { text: '+57 322 312 1409', url: 'https://wa.me/573223121409' },
     },
     summaryTitle: 'Professional Summary',
-    summary: 'Senior DevOps Lead & AI Architect with 15+ years of experience. From CTO & Co-Founder (9 years building A_Byte Corp) to infrastructure leader at Chiper, a high-growth Series B startup operating across Colombia, Mexico and Brazil. Expert in Cloud orchestration (GCP, Kubernetes, Terraform) and pioneer in integrating Agentic AI into the SDLC, achieving a 60% reduction in Time-to-Market while maintaining 99.9% platform uptime for multi-country operations serving 50K+ daily transactions. Currently leading the modernization of the B2B e-commerce platform — decomposing legacy monoliths into clean Go microservices.',
+    summary: 'Senior Full Stack Developer & Solutions Architect with 15+ years of experience. From CTO & Co-Founder (9 years building A_Byte Corp) to Full Stack Developer, Solutions Architect & DevOps Lead at Chiper, a high-growth Series B startup operating across Colombia, Mexico and Brazil. Expert in designing and building scalable backend systems (Go, Node.js, microservices) with strong Cloud foundations (GCP, Kubernetes, Terraform), and pioneer in integrating Agentic AI into the SDLC, achieving a 60% reduction in Time-to-Market while maintaining 99.9% platform uptime for multi-country operations serving 50K+ daily transactions. Currently leading the modernization of the B2B e-commerce platform — decomposing legacy monoliths into clean Go microservices.',
     competenciesTitle: 'Core Competencies',
     skills: [
       ['Cloud & Infrastructure', 'GCP (Cloud Run, Pub/Sub, GCS), AWS, Kubernetes, Docker, Terraform, CI/CD (GitHub Actions, GitLab CI), Linux.'],
@@ -56,7 +56,7 @@ const i18nData = {
         ],
       },
       {
-        title: 'DevOps Lead & Senior Fullstack Engineer',
+        title: 'Senior Fullstack Engineer & DevOps Lead',
         period: '2022 - 2025',
         company: 'Chiper \u2014 B2B Marketplace (Col, Mex, Bra) | Series B Startup',
         bullets: [
@@ -106,7 +106,7 @@ const i18nData = {
     footer: 'Brayan Murcia  |  brayanmurcia.lat  |  CV generated dynamically with Next.js + jsPDF',
   },
   es: {
-    role: 'Senior DevOps Lead & Arquitecto AI-Augmented',
+    role: 'Senior Full Stack Developer & Arquitecto de Soluciones AI-Augmented',
     contactLines: [
       'abytecorp@gmail.com  |  +57 322 312 1409  |  brayanmurcia.lat  |  Colombia',
       'linkedin.com/in/brayan-murcia  |  github.com/AbyteQuantic  |  Ingles B1  |  15+ anos',
@@ -119,7 +119,7 @@ const i18nData = {
       phone: { text: '+57 322 312 1409', url: 'https://wa.me/573223121409' },
     },
     summaryTitle: 'Perfil Profesional',
-    summary: 'Senior DevOps Lead & Arquitecto AI con mas de 15 anos de trayectoria. De CTO & Co-Fundador (9 anos construyendo A_Byte Corp) a lider de infraestructura en Chiper, startup Serie B operando en Colombia, Mexico y Brasil. Experto en orquestacion Cloud (GCP, Kubernetes, Terraform) y pionero en la integracion de IA Agentica en el SDLC, logrando una reduccion del 60% en el Time-to-Market manteniendo 99.9% de uptime con 50K+ transacciones diarias. Actualmente lidera la modernizacion de la plataforma e-commerce B2B, descomponiendo monolitos legacy en microservicios limpios en Go.',
+    summary: 'Senior Full Stack Developer & Arquitecto de Soluciones con mas de 15 anos de trayectoria. De CTO & Co-Fundador (9 anos construyendo A_Byte Corp) a Full Stack Developer, Arquitecto de Soluciones & DevOps Lead en Chiper, startup Serie B operando en Colombia, Mexico y Brasil. Experto en diseno y construccion de sistemas backend escalables (Go, Node.js, microservicios) con solidas bases Cloud (GCP, Kubernetes, Terraform), y pionero en la integracion de IA Agentica en el SDLC, logrando una reduccion del 60% en el Time-to-Market manteniendo 99.9% de uptime con 50K+ transacciones diarias. Actualmente lidera la modernizacion de la plataforma e-commerce B2B, descomponiendo monolitos legacy en microservicios limpios en Go.',
     competenciesTitle: 'Competencias Clave',
     skills: [
       ['Cloud & Infraestructura', 'GCP (Cloud Run, Pub/Sub, GCS), AWS, Kubernetes, Docker, Terraform, CI/CD (GitHub Actions, GitLab CI), Linux.'],
@@ -145,7 +145,7 @@ const i18nData = {
         ],
       },
       {
-        title: 'DevOps Lead & Senior Fullstack Engineer',
+        title: 'Senior Fullstack Engineer & DevOps Lead',
         period: '2022 - 2025',
         company: 'Chiper - Marketplace B2B (Col, Mex, Bra) | Startup Serie B',
         bullets: [

@@ -83,9 +83,10 @@ const experience = {
     {
       title: 'Chiper',
       period: '2022 \u2013 Present',
-      role: 'DevOps Lead & Senior Fullstack Engineer',
-      desc: 'Leading infrastructure, CI/CD and the monolith-to-microservices migration (LoopBack 3 \u2192 NestJS). Implemented AI-Augmented workflows (Claude Code, Cursor) reducing feature delivery time by 60%. Managing multi-country Cloud deployments on GCP (Cloud Run, Pub/Sub, GCS) with 99.9% uptime.',
+      role: 'Senior Full Stack Developer & Solutions Architect (DevOps Lead)',
+      desc: 'Leading the renewal of the B2B e-commerce platform \u2014 decomposing the legacy monolith into clean Go microservices (Strangler Fig, REST/gRPC, Cloud Run). Previously led infrastructure, CI/CD and the monolith-to-microservices migration (LoopBack 3 \u2192 NestJS). Drove AI-Augmented workflows (Claude Code, Cursor) cutting feature delivery time by 60% while sustaining 99.9% uptime on GCP.',
       projects: [
+        { name: 'ecommerce-renewal', detail: 'New Go microservices decomposing the B2B e-commerce monolith (2026)' },
         { name: 'reference-catalogue-api', detail: 'Catalog orchestrator microservice (NestJS, saga patterns)' },
         { name: 'ms-pricing', detail: 'Isolated pricing engine for multi-location B2B' },
         { name: 'VendIA', detail: 'AI-powered POS with Gemini OCR for invoice processing (personal, 2026)' },
@@ -117,9 +118,10 @@ const experience = {
     {
       title: 'Chiper',
       period: '2022 \u2013 Presente',
-      role: 'DevOps Lead & Senior Fullstack Engineer',
-      desc: 'Lidera infraestructura, CI/CD y la migraci\u00f3n de monolito a microservicios (LoopBack 3 \u2192 NestJS). Implement\u00f3 flujos de trabajo con IA (Claude Code, Cursor) reduciendo el tiempo de entrega en un 60%. Gestiona despliegues Cloud multi-pa\u00eds en GCP (Cloud Run, Pub/Sub, GCS) con 99.9% de uptime.',
+      role: 'Senior Full Stack Developer & Arquitecto de Soluciones (DevOps Lead)',
+      desc: 'Lidera la renovaci\u00f3n de la plataforma e-commerce B2B, descomponiendo el monolito legacy en microservicios limpios en Go (Strangler Fig, REST/gRPC, Cloud Run). Previamente lider\u00f3 infraestructura, CI/CD y la migraci\u00f3n de monolito a microservicios (LoopBack 3 \u2192 NestJS). Impuls\u00f3 flujos con IA (Claude Code, Cursor) reduciendo el tiempo de entrega en un 60% manteniendo 99.9% de uptime en GCP.',
       projects: [
+        { name: 'ecommerce-renewal', detail: 'Nuevos microservicios en Go descomponiendo el monolito de e-commerce B2B (2026)' },
         { name: 'reference-catalogue-api', detail: 'Microservicio orquestador de cat\u00e1logo (NestJS, patrones saga)' },
         { name: 'ms-pricing', detail: 'Motor de precios aislado para B2B multi-ubicaci\u00f3n' },
         { name: 'VendIA', detail: 'POS con IA y OCR de Gemini para procesamiento de facturas (personal, 2026)' },

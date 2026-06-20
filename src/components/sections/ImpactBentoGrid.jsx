@@ -26,7 +26,7 @@ const metrics = {
     {
       value: '15+',
       subtitle: 'Years of Experience',
-      label: 'From CTO & Founder to DevOps Lead.',
+      label: 'From CTO & Founder to Full Stack Developer & Solutions Architect.',
       span: true,
     },
   ],
@@ -52,7 +52,7 @@ const metrics = {
     {
       value: '15+',
       subtitle: 'A\u00f1os de experiencia',
-      label: 'De CTO y Fundador a DevOps Lead.',
+      label: 'De CTO y Fundador a Full Stack Developer & Arquitecto de Soluciones.',
       span: true,
     },
   ],
