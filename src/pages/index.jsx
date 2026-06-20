@@ -9,6 +9,7 @@ import AboutSection from "@components/sections/About";
 import ServicesSection from "@components/sections/Services";
 import SeniorSkillsGrid from "@components/sections/SeniorSkillsGrid";
 import ImpactBentoGrid from "@components/sections/ImpactBentoGrid";
+import ExperienceSection from "@components/sections/ExperienceSection";
 import DownloadCVButton from "@components/sections/DownloadCVButton";
 import LatestProjectsSection from "@components/sections/LatestProjects";
 import CallToActionSection from "@components/sections/CallToAction";
@@ -28,6 +29,7 @@ const Home1 = (props) => {
       <SeniorSkillsGrid />
       <GitHubHeatmap />
       <ImpactBentoGrid />
+      <ExperienceSection />
       <DownloadCVButton />
       <TestimonialSlider />
       <LatestProjectsSection projects={props.projects} />
