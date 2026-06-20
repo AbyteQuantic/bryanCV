@@ -30,12 +30,12 @@ const i18nData = {
       phone: { text: '+57 322 312 1409', url: 'https://wa.me/573223121409' },
     },
     summaryTitle: 'Professional Summary',
-    summary: 'Senior DevOps Lead & AI Architect with 15+ years of experience. From CTO & Co-Founder (9 years building A_Byte Corp) to infrastructure leader at Chiper, a high-growth Series B startup operating across Colombia, Mexico and Brazil. Expert in Cloud orchestration (GCP, Kubernetes, Terraform) and pioneer in integrating Agentic AI into the SDLC, achieving a 60% reduction in Time-to-Market while maintaining 99.9% platform uptime for multi-country operations serving 50K+ daily transactions.',
+    summary: 'Senior DevOps Lead & AI Architect with 15+ years of experience. From CTO & Co-Founder (9 years building A_Byte Corp) to infrastructure leader at Chiper, a high-growth Series B startup operating across Colombia, Mexico and Brazil. Expert in Cloud orchestration (GCP, Kubernetes, Terraform) and pioneer in integrating Agentic AI into the SDLC, achieving a 60% reduction in Time-to-Market while maintaining 99.9% platform uptime for multi-country operations serving 50K+ daily transactions. Currently leading the modernization of the B2B e-commerce platform — decomposing legacy monoliths into clean Go microservices.',
     competenciesTitle: 'Core Competencies',
     skills: [
       ['Cloud & Infrastructure', 'GCP (Cloud Run, Pub/Sub, GCS), AWS, Kubernetes, Docker, Terraform, CI/CD (GitHub Actions, GitLab CI), Linux.'],
       ['AI & Productivity', 'Prompt Engineering, Agentic AI, Claude Code, Cursor, AI-Assisted SDLC, GitHub Copilot, Gemini API.'],
-      ['Backend & Architecture', 'Node.js (NestJS), Go, Python, Microservices, Event-Driven Design, Saga Patterns, Legacy Refactoring.'],
+      ['Backend & Architecture', 'Go (Golang), Node.js (NestJS), Python, Microservices, REST/gRPC, Clean Architecture, DDD, Event-Driven Design, Saga & Strangler Fig Patterns, Legacy Refactoring.'],
       ['Frontend & Mobile', 'React, Next.js, Vue.js, Flutter, React Native.'],
       ['Data & Observability', 'MySQL, PostgreSQL, MongoDB, Elasticsearch, Redis, BigQuery, Grafana.'],
       ['QA & Resilience', 'Selenium, Appium, Pytest, K6 (Performance), E2E Testing, CI/CD-Integrated QA Pipelines.'],
@@ -44,8 +44,20 @@ const i18nData = {
     experienceTitle: 'Professional Experience',
     jobs: [
       {
+        title: 'Senior Full Stack Developer | E-commerce Modernization Lead',
+        period: 'Jan 2026 - Present',
+        company: 'Chiper \u2014 B2B Marketplace (Col, Mex, Bra) | Series B Startup',
+        bullets: [
+          'Leading the end-to-end renewal of the B2B e-commerce platform, defining the target architecture and the roadmap to decompose a legacy monolith into a Go-based microservices ecosystem.',
+          'Refactoring and decoupling critical monolith modules (catalog, cart, checkout) by carving out bounded contexts with the Strangler Fig pattern and async Pub/Sub messaging, guaranteeing zero-downtime, incremental migration.',
+          'Designing and building new microservices in Go following Clean Architecture and SOLID principles \u2014 REST/gRPC APIs, high concurrency via goroutines, context-based cancellation and built-in observability (structured logging, metrics, distributed tracing).',
+          'Enforcing rigorous quality gates: Go table-driven tests with 80%+ coverage, containerized builds and CI/CD pipelines that ship the new services to GCP Cloud Run safely and incrementally.',
+          'Driving the full-stack team (Go + React/Next.js) and accelerating delivery with AI-assisted development (Claude Code, Cursor), cutting e-commerce technical debt while raising code quality.',
+        ],
+      },
+      {
         title: 'DevOps Lead & Senior Fullstack Engineer',
-        period: '2022 - Present',
+        period: '2022 - 2025',
         company: 'Chiper \u2014 B2B Marketplace (Col, Mex, Bra) | Series B Startup',
         bullets: [
           'Led Cloud strategy on GCP (Cloud Run, Pub/Sub, GCS), ensuring 99.9% uptime for critical cross-border operations serving 50K+ daily transactions across 3 countries.',
@@ -107,12 +119,12 @@ const i18nData = {
       phone: { text: '+57 322 312 1409', url: 'https://wa.me/573223121409' },
     },
     summaryTitle: 'Perfil Profesional',
-    summary: 'Senior DevOps Lead & Arquitecto AI con mas de 15 anos de trayectoria. De CTO & Co-Fundador (9 anos construyendo A_Byte Corp) a lider de infraestructura en Chiper, startup Serie B operando en Colombia, Mexico y Brasil. Experto en orquestacion Cloud (GCP, Kubernetes, Terraform) y pionero en la integracion de IA Agentica en el SDLC, logrando una reduccion del 60% en el Time-to-Market manteniendo 99.9% de uptime con 50K+ transacciones diarias.',
+    summary: 'Senior DevOps Lead & Arquitecto AI con mas de 15 anos de trayectoria. De CTO & Co-Fundador (9 anos construyendo A_Byte Corp) a lider de infraestructura en Chiper, startup Serie B operando en Colombia, Mexico y Brasil. Experto en orquestacion Cloud (GCP, Kubernetes, Terraform) y pionero en la integracion de IA Agentica en el SDLC, logrando una reduccion del 60% en el Time-to-Market manteniendo 99.9% de uptime con 50K+ transacciones diarias. Actualmente lidera la modernizacion de la plataforma e-commerce B2B, descomponiendo monolitos legacy en microservicios limpios en Go.',
     competenciesTitle: 'Competencias Clave',
     skills: [
       ['Cloud & Infraestructura', 'GCP (Cloud Run, Pub/Sub, GCS), AWS, Kubernetes, Docker, Terraform, CI/CD (GitHub Actions, GitLab CI), Linux.'],
       ['IA & Productividad', 'Prompt Engineering, IA Agentica, Claude Code, Cursor, SDLC Asistido por IA, GitHub Copilot, Gemini API.'],
-      ['Backend & Arquitectura', 'Node.js (NestJS), Go, Python, Microservicios, Diseno Event-Driven, Patrones Saga, Refactorizacion Legacy.'],
+      ['Backend & Arquitectura', 'Go (Golang), Node.js (NestJS), Python, Microservicios, REST/gRPC, Clean Architecture, DDD, Diseno Event-Driven, Patrones Saga & Strangler Fig, Refactorizacion Legacy.'],
       ['Frontend & Movil', 'React, Next.js, Vue.js, Flutter, React Native.'],
       ['Datos & Observabilidad', 'MySQL, PostgreSQL, MongoDB, Elasticsearch, Redis, BigQuery, Grafana.'],
       ['QA & Resiliencia', 'Selenium, Appium, Pytest, K6 (Performance), Testing E2E, Pipelines QA en CI/CD.'],
@@ -121,8 +133,20 @@ const i18nData = {
     experienceTitle: 'Experiencia Profesional',
     jobs: [
       {
+        title: 'Senior Full Stack Developer | Lider de Renovacion E-commerce',
+        period: 'Ene 2026 - Presente',
+        company: 'Chiper - Marketplace B2B (Col, Mex, Bra) | Startup Serie B',
+        bullets: [
+          'Lidero la renovacion integral de la plataforma e-commerce B2B, definiendo la arquitectura objetivo y el roadmap de descomposicion de un monolito legacy hacia un ecosistema de microservicios en Go.',
+          'Depuro y desacoplo modulos criticos del monolito (catalogo, carrito, checkout) extrayendo bounded contexts con el patron Strangler Fig y mensajeria asincrona via Pub/Sub, garantizando una migracion incremental y sin downtime.',
+          'Diseno y construyo nuevos microservicios en Go aplicando Clean Architecture y principios SOLID: APIs REST/gRPC, alta concurrencia con goroutines, cancelacion basada en context y observabilidad integrada (logging estructurado, metricas, tracing distribuido).',
+          'Aseguro la calidad con quality gates exigentes: table-driven tests en Go con 80%+ de cobertura, builds containerizados y pipelines CI/CD que despliegan los nuevos servicios en GCP Cloud Run de forma segura e incremental.',
+          'Coordino al equipo full-stack (Go + React/Next.js) acelerando la entrega con desarrollo asistido por IA (Claude Code, Cursor), reduciendo la deuda tecnica del e-commerce y elevando la calidad del codigo.',
+        ],
+      },
+      {
         title: 'DevOps Lead & Senior Fullstack Engineer',
-        period: '2022 - Presente',
+        period: '2022 - 2025',
         company: 'Chiper - Marketplace B2B (Col, Mex, Bra) | Startup Serie B',
         bullets: [
           'Lidere la estrategia Cloud en GCP (Cloud Run, Pub/Sub, GCS), garantizando 99.9% de uptime para operaciones criticas transfronterizas sirviendo 50K+ transacciones diarias en 3 paises.',

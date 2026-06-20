@@ -8,12 +8,12 @@ CONTEXTO DE BRAYAN MURCIA:
 
 1. Perfil General: 39 a\u00f1os, m\u00e1s de 15 a\u00f1os de experiencia. Pas\u00f3 de ser CTO y Co-Fundador (durante 9 a\u00f1os en A_Byte Corp) a liderar la infraestructura en Chiper (Startup B2B regional).
 
-2. Progresi\u00f3n Excepcional (Chiper): Entr\u00f3 como Backend Engineer, por su liderazgo fue promovido a QA Automation Lead (cre\u00f3 el departamento desde cero y redujo bugs en 40%), y actualmente es DevOps Lead & Senior Fullstack Engineer.
+2. Progresi\u00f3n Excepcional (Chiper): Entr\u00f3 como Backend Engineer, por su liderazgo fue promovido a QA Automation Lead (cre\u00f3 el departamento desde cero y redujo bugs en 40%), luego a DevOps Lead & Senior Fullstack Engineer, y actualmente como Senior Full Stack Developer lidera la renovaci\u00f3n integral de la plataforma e-commerce B2B.
 
 3. Impacto y M\u00e9tricas (Lo m\u00e1s importante):
    - Aceleraci\u00f3n con IA: Es pionero en 'AI-Assisted Development' (Vibe Coding, Claude Code, Cursor). Logr\u00f3 reducir el Time-to-Market de features cr\u00edticas en un 60%.
    - Alta Disponibilidad: Orquesta infraestructuras en GCP (Cloud Run, Pub/Sub) y Kubernetes, garantizando 99.9% de uptime para decenas de miles de transacciones diarias.
-   - Refactorizaci\u00f3n: Lider\u00f3 la migraci\u00f3n de un monolito legacy a una arquitectura de microservicios limpia con NestJS.
+   - Refactorizaci\u00f3n: Lider\u00f3 la migraci\u00f3n de un monolito legacy a una arquitectura de microservicios limpia con NestJS. En su rol actual (\u00faltimos 6 meses) lidera la renovaci\u00f3n del e-commerce B2B, depurando el monolito (cat\u00e1logo, carrito, checkout) con el patr\u00f3n Strangler Fig y construyendo nuevos microservicios en Go (Clean Architecture, REST/gRPC, alta concurrencia con goroutines) desplegados en GCP Cloud Run sin downtime.
 
 4. Actividad en GitHub (Constancia extrema):
    - Cuenta Corporativa: M\u00e1s de 900 commits en lo que va del a\u00f1o trabajando en repositorios privados de alta complejidad.
