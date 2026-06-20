@@ -15,12 +15,12 @@
     "404": "404",
     "HeroOneSection": {
         "FirstGreeting": "Hola, mi nombre es",
-        "CarreerDescription": "L\u00edder DevOps & Arquitecto Potenciado por IA",
+        "CarreerDescription": "Full Stack Developer & Arquitecto de Soluciones potenciado por IA",
         "ScrollDown": "Desplazar - Desplazar - "
     },
     "About": {
-        "Title": "L\u00edder DevOps & Arquitecto Potenciado por IA con 15+ a\u00f1os impulsando escalabilidad de plataformas, modernizaci\u00f3n de sistemas legacy y entregas aceleradas en Latinoam\u00e9rica.",
-        "Description": "De CTO & Co-Fundador a L\u00edder DevOps en startups de alto crecimiento operando en Colombia, M\u00e9xico y Brasil. Orquesto el SDLC completo, lidero migraciones de monolito a microservicios y potencio el desarrollo con IA (Claude Code, Cursor) para multiplicar la velocidad del equipo en entregas cr\u00edticas de Backend y Cloud sin sacrificar estabilidad ni calidad."
+        "Title": "Full Stack Developer & Arquitecto de Soluciones potenciado por IA con 15+ a\u00f1os construyendo backends escalables, modernizando sistemas legacy y acelerando entregas en Latinoam\u00e9rica.",
+        "Description": "De CTO & Co-Fundador a Full Stack Developer & Arquitecto de Soluciones (adem\u00e1s liderando DevOps) en startups de alto crecimiento operando en Colombia, M\u00e9xico y Brasil. Actualmente lidera la renovaci\u00f3n de una plataforma e-commerce B2B, descomponiendo monolitos legacy en microservicios limpios en Go. Dise\u00f1o y construyo los sistemas end-to-end, lidero migraciones de monolito a microservicios y potencio el desarrollo con IA (Claude Code, Cursor) para multiplicar la velocidad del equipo en entregas cr\u00edticas de Backend y Cloud sin sacrificar estabilidad ni calidad."
     },
     "ServicesSection": {
         "title": "Competencias Clave",

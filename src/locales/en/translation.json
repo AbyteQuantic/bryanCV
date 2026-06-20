@@ -20,12 +20,12 @@
     "404": "404",
     "HeroOneSection": {
         "FirstGreeting": "Hello, my name is",
-        "CarreerDescription": "DevOps Lead & AI-Augmented Architect",
+        "CarreerDescription": "Full Stack Developer & AI-Augmented Solutions Architect",
         "ScrollDown": "Scroll down - Scroll down - "
     },
     "About": {
-        "Title": "DevOps Lead & AI-Augmented Architect with 15+ years driving platform scalability, legacy modernization and accelerated delivery across Latin America.",
-        "Description": "From CTO & Co-Founder to DevOps Lead at high-growth startups operating across Colombia, Mexico and Brazil. I orchestrate the full SDLC, lead monolith-to-microservices migrations and leverage AI-Assisted Development (Claude Code, Cursor) to multiply team velocity on critical Backend and Cloud deliverables without sacrificing stability or quality."
+        "Title": "Full Stack Developer & AI-Augmented Solutions Architect with 15+ years building scalable backends, modernizing legacy systems and accelerating delivery across Latin America.",
+        "Description": "From CTO & Co-Founder to Full Stack Developer & Solutions Architect (also leading DevOps) at high-growth startups operating across Colombia, Mexico and Brazil. Currently leading the renewal of a B2B e-commerce platform — decomposing legacy monoliths into clean Go microservices. I design and build the systems end-to-end, lead monolith-to-microservices migrations and leverage AI-Assisted Development (Claude Code, Cursor) to multiply team velocity on critical Backend and Cloud deliverables without sacrificing stability or quality."
     },
     "ServicesSection": {
         "title": "Core Competencies",
