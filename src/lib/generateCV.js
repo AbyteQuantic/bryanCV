@@ -44,7 +44,7 @@ const i18nData = {
     experienceTitle: 'Professional Experience',
     jobs: [
       {
-        title: 'Full Stack Developer Semi-Senior (Ssr) | E-commerce Modernization Lead',
+        title: 'Full Stack Developer | E-commerce Modernization Lead',
         period: 'Jan 2026 - Present',
         company: 'Chiper \u2014 B2B Marketplace (Col, Mex, Bra) | Series B Startup',
         bullets: [
@@ -133,7 +133,7 @@ const i18nData = {
     experienceTitle: 'Experiencia Profesional',
     jobs: [
       {
-        title: 'Full Stack Developer Semi-Senior (Ssr) | Lider de Renovacion E-commerce',
+        title: 'Full Stack Developer | Lider de Renovacion E-commerce',
         period: 'Ene 2026 - Presente',
         company: 'Chiper - Marketplace B2B (Col, Mex, Bra) | Startup Serie B',
         bullets: [

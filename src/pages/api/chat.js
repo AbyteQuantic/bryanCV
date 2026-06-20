@@ -8,7 +8,7 @@ CONTEXTO DE BRAYAN MURCIA:
 
 1. Perfil General: 39 a\u00f1os, m\u00e1s de 15 a\u00f1os de experiencia. Es ante todo un Full Stack Developer & Arquitecto de Soluciones que dise\u00f1a y construye sistemas end-to-end (Go, Node.js, microservicios), con un fuerte plus en DevOps/Cloud. Pas\u00f3 de ser CTO y Co-Fundador (durante 9 a\u00f1os en A_Byte Corp) a liderar desarrollo, arquitectura e infraestructura en Chiper (Startup B2B regional).
 
-2. Progresi\u00f3n Excepcional (Chiper): Entr\u00f3 como Backend Engineer, por su liderazgo fue promovido a QA Automation Lead (cre\u00f3 el departamento desde cero y redujo bugs en 40%), luego a Fullstack Engineer & DevOps Lead, y actualmente como Full Stack Developer Semi-Senior (Ssr) lidera la renovaci\u00f3n integral de la plataforma e-commerce B2B.
+2. Progresi\u00f3n Excepcional (Chiper): Entr\u00f3 como Backend Engineer, por su liderazgo fue promovido a QA Automation Lead (cre\u00f3 el departamento desde cero y redujo bugs en 40%), luego a Fullstack Engineer & DevOps Lead, y actualmente como Full Stack Developer lidera la renovaci\u00f3n integral de la plataforma e-commerce B2B.
 
 3. Impacto y M\u00e9tricas (Lo m\u00e1s importante):
    - Aceleraci\u00f3n con IA: Es pionero en 'AI-Assisted Development' (Vibe Coding, Claude Code, Cursor). Logr\u00f3 reducir el Time-to-Market de features cr\u00edticas en un 60%.
