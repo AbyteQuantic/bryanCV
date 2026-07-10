@@ -75,6 +75,8 @@ const nextConfig = {
       { source: '/nzt/:path*', destination: 'https://nzt-limitless-next.vercel.app/nzt/:path*' },
       { source: '/vivo', destination: 'https://vivo-next.vercel.app/vivo' },
       { source: '/vivo/:path*', destination: 'https://vivo-next.vercel.app/vivo/:path*' },
+      { source: '/nabi', destination: 'https://nabi-mocha.vercel.app/nabi' },
+      { source: '/nabi/:path*', destination: 'https://nabi-mocha.vercel.app/nabi/:path*' },
     ];
   },
   
