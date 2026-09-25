@@ -1,4 +1,5 @@
 import { getRedis } from '@library/redis';
+import { verifySession } from '@library/adminSession';
 
 function parseSortedSet(raw) {
   if (!raw || !raw.length) return [];
@@ -14,19 +15,7 @@ export default async function handler(req, res) {
     return res.status(405).json({ error: 'Method not allowed' });
   }
 
-  const token = req.cookies?.admin_session;
-  const adminPassword = process.env.ADMIN_PASSWORD;
-
-  if (!token || !adminPassword) {
-    return res.status(401).json({ error: 'Unauthorized' });
-  }
-
-  try {
-    const decoded = Buffer.from(token, 'base64').toString();
-    if (!decoded.endsWith(`:${adminPassword}`)) {
-      return res.status(401).json({ error: 'Unauthorized' });
-    }
-  } catch {
+  if (!verifySession(req.cookies?.admin_session)) {
     return res.status(401).json({ error: 'Unauthorized' });
   }
 

@@ -1,7 +1,8 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
   reactStrictMode: true,
-  
+  poweredByHeader: false,
+
   i18n: {
     locales: ['en', 'es'],
     defaultLocale: 'en',
@@ -50,7 +51,8 @@ const nextConfig = {
   async headers() {
     return [
       {
-        source: '/(.*)',
+        /* Con i18n, un patrón que exija segmento tras el locale no cubre la raíz. */
+        source: '/:path*',
         headers: [
           {
             key: 'X-Frame-Options',
@@ -62,9 +64,21 @@ const nextConfig = {
           },
           {
             key: 'Referrer-Policy',
-            value: 'origin-when-cross-origin',
+            value: 'strict-origin-when-cross-origin',
+          },
+          {
+            key: 'Permissions-Policy',
+            value: 'camera=(), microphone=(), geolocation=(), payment=()',
           },
         ],
+      },
+      {
+        source: '/admin/:path*',
+        headers: [{ key: 'X-Robots-Tag', value: 'noindex, nofollow' }],
+      },
+      {
+        source: '/api/:path*',
+        headers: [{ key: 'X-Robots-Tag', value: 'noindex, nofollow' }],
       },
     ];
   },

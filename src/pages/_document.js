@@ -3,7 +3,7 @@ import Document, { Html, Head, Main, NextScript } from "next/document";
 class MyDocument extends Document {
   render() {
     return (
-      <Html lang="en">
+      <Html lang={this.props.__NEXT_DATA__?.locale || 'en'}>
         <Head>
           {/* meta begin */}
           <meta charSet="UTF-8" />

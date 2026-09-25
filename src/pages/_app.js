@@ -10,9 +10,6 @@ import '../styles/scss/style-light.scss';
 import 'react-github-calendar/tooltips.css';
 import '../styles/contact.css';
 
-import { register } from "swiper/element/bundle";
-register();
-
 function MyApp({ Component, pageProps }) {
   const { locale, pathname } = useRouter();
   const isAdmin = pathname.startsWith('/admin');

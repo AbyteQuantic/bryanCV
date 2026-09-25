@@ -14,7 +14,7 @@ const LeftPanelModule = () => {
 
             <ul className="mil-social-icons">
                 {appData.social.map((item, key) => (
-                <li key={`lp-social-item-${key}`}><a href={item.link} target="_blank" className="social-icon"><i className={item.icon} /></a></li>
+                <li key={`lp-social-item-${key}`}><a href={item.link} target="_blank" rel="noopener noreferrer" aria-label={item.title} className="social-icon"><i className={item.icon} /></a></li>
                 ))}
             </ul>
 

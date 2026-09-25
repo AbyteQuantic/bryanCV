@@ -33,11 +33,6 @@ const PageBanner = ({ pageTitle, breadTitle, align }) => {
               <h1 className="mil-h1-sm mil-up mil-mb-60" dangerouslySetInnerHTML={{__html : pageTitle}} />
               <ul className="mil-breadcrumbs mil-up">
                   <li><Link href="/">{isEs ? 'Inicio' : 'Home'}</Link></li>
-                  {asPath.indexOf('/blog/') != -1 &&
-                  <li>
-                    <Link href="/blog">Blog</Link>
-                  </li>
-                  }
                   {asPath.indexOf('/projects/') != -1 &&
                   <li>
                     <Link href="/projects">{isEs ? 'Proyectos' : 'Projects'}</Link>

@@ -1,6 +1,12 @@
 import { getRedis } from '@library/redis';
+import { allowRequest, clientIp } from '@library/rateLimit';
 
 const HOT_LEAD_THRESHOLD_SECONDS = 120;
+const EVENTS = new Set(['page_view', 'chat_question', 'cv_download', 'session_end']);
+const VISITOR_ID = /^[A-Za-z0-9_-]{8,64}$/;
+const SECTION = /^[A-Za-z0-9_-]{1,48}$/;
+const DAILY_TTL = 60 * 60 * 24 * 35; /* el dashboard lee los últimos 7 días */
+const LEAD_TTL = 60 * 60 * 24 * 90;
 
 function parseDevice(ua) {
   if (!ua) return 'unknown';
@@ -12,15 +18,20 @@ export default async function handler(req, res) {
     return res.status(405).json({ error: 'Method not allowed' });
   }
 
+  const { event, visitorId, section, question, duration } = req.body || {};
+
+  if (!EVENTS.has(event) || typeof visitorId !== 'string' || !VISITOR_ID.test(visitorId)) {
+    return res.status(400).json({ error: 'Invalid event or visitorId' });
+  }
+  const validSection = typeof section === 'string' && SECTION.test(section) ? section : null;
+
   const redis = getRedis();
   if (!redis) {
     return res.status(200).json({ ok: true, stored: false });
   }
 
-  const { event, visitorId, section, question, duration } = req.body;
-
-  if (!event || !visitorId) {
-    return res.status(400).json({ error: 'Missing event or visitorId' });
+  if (!(await allowRequest(`track:${clientIp(req)}`, 120, 10 * 60))) {
+    return res.status(429).json({ error: 'Too many events' });
   }
 
   const today = new Date().toISOString().slice(0, 10);
@@ -45,14 +56,16 @@ export default async function handler(req, res) {
       case 'page_view':
         pipe.incr('metrics:page_views');
         pipe.incr(`metrics:page_views:${today}`);
-        if (section) {
-          pipe.zincrby('metrics:sections', 1, section);
+        pipe.expire(`metrics:page_views:${today}`, DAILY_TTL);
+        if (validSection) {
+          pipe.zincrby('metrics:sections', 1, validSection);
         }
         pipe.sadd(`metrics:visitors:${today}`, visitorId);
+        pipe.expire(`metrics:visitors:${today}`, DAILY_TTL);
         break;
 
       case 'chat_question':
-        if (question) {
+        if (typeof question === 'string' && question.trim()) {
           pipe.lpush(
             'metrics:chat_questions',
             JSON.stringify({
@@ -72,12 +85,14 @@ export default async function handler(req, res) {
             device,
             lastSeen: new Date().toISOString(),
           });
+          pipe.expire(`metrics:lead:${visitorId}`, LEAD_TTL);
         }
         break;
 
       case 'cv_download':
         pipe.incr('metrics:cv_downloads');
         pipe.incr(`metrics:cv_downloads:${today}`);
+        pipe.expire(`metrics:cv_downloads:${today}`, DAILY_TTL);
         pipe.sadd('metrics:hot_leads', visitorId);
         pipe.hset(`metrics:lead:${visitorId}`, {
           downloadedCV: 'true',
@@ -85,23 +100,29 @@ export default async function handler(req, res) {
           device,
           lastSeen: new Date().toISOString(),
         });
+        pipe.expire(`metrics:lead:${visitorId}`, LEAD_TTL);
         break;
 
-      case 'session_end':
-        if (typeof duration === 'number') {
-          pipe.lpush('metrics:session_durations', duration);
+      case 'session_end': {
+        /* Duración en segundos, acotada a 2 h para no sesgar el promedio. */
+        const seconds = Number(duration);
+        if (Number.isFinite(seconds) && seconds > 0) {
+          const clamped = Math.min(Math.round(seconds), 7200);
+          pipe.lpush('metrics:session_durations', clamped);
           pipe.ltrim('metrics:session_durations', 0, 199);
-          if (duration >= HOT_LEAD_THRESHOLD_SECONDS) {
+          if (clamped >= HOT_LEAD_THRESHOLD_SECONDS) {
             pipe.sadd('metrics:hot_leads', visitorId);
             pipe.hset(`metrics:lead:${visitorId}`, {
-              longSession: String(duration),
+              longSession: String(clamped),
               country,
               device,
               lastSeen: new Date().toISOString(),
             });
+            pipe.expire(`metrics:lead:${visitorId}`, LEAD_TTL);
           }
         }
         break;
+      }
     }
 
     await pipe.exec();

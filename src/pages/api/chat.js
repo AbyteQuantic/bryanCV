@@ -1,4 +1,10 @@
+import { allowRequest, clientIp } from '@library/rateLimit';
+
 const MAX_REQUESTS_PER_SESSION = 5;
+const MAX_REQUESTS_PER_IP_PER_DAY = 20;
+const MAX_MESSAGE_CHARS = 500;
+const MAX_HISTORY_TURNS = 10;
+const MAX_HISTORY_CHARS = 1000;
 
 const SYSTEM_PROMPT = `Eres el "AI Assistant & Tech Recruiter" personal de Brayan Murcia. Tu \u00fanico objetivo es convencer a reclutadores t\u00e9cnicos, Engineering Managers y CTOs de empresas Top Tier (como Mercado Libre o unicornios europeos) de que Brayan es el candidato definitivo para posiciones de Full Stack Developer, Solutions Architect o Backend Engineer (Go), con fuerte componente DevOps/Cloud como diferenciador.
 
@@ -76,19 +82,42 @@ export default async function handler(req, res) {
     return res.status(405).json({ error: 'Method not allowed' });
   }
 
-  const { message, history = [], requestCount = 0, locale = 'en' } = req.body;
+  const { message, history, requestCount = 0, locale = 'en' } = req.body || {};
   const t = locale === 'es' ? i18n.es : i18n.en;
 
-  if (!message) {
+  const text = typeof message === 'string' ? message.trim() : '';
+  if (!text) {
     return res.status(400).json({ error: 'Message is required' });
   }
+  if (text.length > MAX_MESSAGE_CHARS) {
+    return res.status(400).json({ error: 'Message too long' });
+  }
 
-  if (requestCount >= MAX_REQUESTS_PER_SESSION) {
+  /* requestCount lo controla el cliente; el tope por IP solo existe con Redis. */
+  const withinDailyLimit = await allowRequest(
+    `chat:${clientIp(req)}`,
+    MAX_REQUESTS_PER_IP_PER_DAY,
+    24 * 60 * 60
+  );
+  if (Number(requestCount) >= MAX_REQUESTS_PER_SESSION || !withinDailyLimit) {
     return res.status(200).json({
       reply: t.limitReached,
       limitReached: true,
     });
   }
+
+  const safeHistory = (Array.isArray(history) ? history : [])
+    .filter(
+      (m) =>
+        m &&
+        (m.role === 'user' || m.role === 'model' || m.role === 'assistant') &&
+        typeof m.text === 'string'
+    )
+    .slice(-MAX_HISTORY_TURNS)
+    .map((m) => ({
+      role: m.role === 'user' ? 'user' : 'model',
+      parts: [{ text: m.text.slice(0, MAX_HISTORY_CHARS) }],
+    }));
 
   const apiKey = process.env.GEMINI_API_KEY;
 
@@ -102,19 +131,14 @@ export default async function handler(req, res) {
         ? 'IDIOMA OBLIGATORIO: Responde SIEMPRE en espa\u00f1ol. NUNCA respondas en ingl\u00e9s bajo ninguna circunstancia.'
         : 'MANDATORY LANGUAGE: Always respond in English. Never respond in Spanish.';
 
-    const contents = [
-      ...history.map((msg) => ({
-        role: msg.role === 'user' ? 'user' : 'model',
-        parts: [{ text: msg.text }],
-      })),
-      { role: 'user', parts: [{ text: message }] },
-    ];
+    const contents = [...safeHistory, { role: 'user', parts: [{ text }] }];
 
     const response = await fetch(
-      `https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash-lite:generateContent?key=${apiKey}`,
+      'https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash-lite:generateContent',
       {
         method: 'POST',
-        headers: { 'Content-Type': 'application/json' },
+        /* En la URL, la key quedaría registrada en logs. */
+        headers: { 'Content-Type': 'application/json', 'x-goog-api-key': apiKey },
         body: JSON.stringify({
           systemInstruction: {
             parts: [{ text: SYSTEM_PROMPT + '\n\n' + langEnforcement }],

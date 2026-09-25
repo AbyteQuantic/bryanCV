@@ -68,6 +68,7 @@ const FloatingAIChat = () => {
       });
 
       const data = await res.json();
+      if (!res.ok || !data.reply) throw new Error(`chat ${res.status}`);
       setMessages((prev) => [...prev, { role: 'bot', text: data.reply }]);
       sendEvent('chat_question', { question: userMsg });
 
@@ -304,6 +305,7 @@ const FloatingAIChat = () => {
                 ref={inputRef}
                 style={styles.input}
                 value={input}
+                maxLength={500}
                 onChange={(e) => setInput(e.target.value)}
                 onKeyDown={(e) => e.key === 'Enter' && sendMessage()}
                 placeholder={

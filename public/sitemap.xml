@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml">
+  <url>
+    <loc>https://www.brayanmurcia.lat/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.brayanmurcia.lat/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://www.brayanmurcia.lat/es"/>
+    <priority>1.0</priority>
+  </url>
+  <url>
+    <loc>https://www.brayanmurcia.lat/es</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.brayanmurcia.lat/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://www.brayanmurcia.lat/es"/>
+    <priority>1.0</priority>
+  </url>
+  <url><loc>https://www.brayanmurcia.lat/projects</loc></url>
+  <url><loc>https://www.brayanmurcia.lat/es/projects</loc></url>
+  <url><loc>https://www.brayanmurcia.lat/projects/project-1</loc></url>
+  <url><loc>https://www.brayanmurcia.lat/projects/project-2</loc></url>
+  <url><loc>https://www.brayanmurcia.lat/projects/project-3</loc></url>
+  <url><loc>https://www.brayanmurcia.lat/projects/project-4</loc></url>
+  <url><loc>https://www.brayanmurcia.lat/projects/project-5</loc></url>
+  <url><loc>https://www.brayanmurcia.lat/es/projects/project-1</loc></url>
+  <url><loc>https://www.brayanmurcia.lat/es/projects/project-2</loc></url>
+  <url><loc>https://www.brayanmurcia.lat/es/projects/project-3</loc></url>
+  <url><loc>https://www.brayanmurcia.lat/es/projects/project-4</loc></url>
+  <url><loc>https://www.brayanmurcia.lat/es/projects/project-5</loc></url>
+  <url><loc>https://www.brayanmurcia.lat/story</loc></url>
+  <url><loc>https://www.brayanmurcia.lat/es/story</loc></url>
+  <url><loc>https://www.brayanmurcia.lat/services</loc></url>
+  <url><loc>https://www.brayanmurcia.lat/es/services</loc></url>
+  <url><loc>https://www.brayanmurcia.lat/contact</loc></url>
+  <url><loc>https://www.brayanmurcia.lat/es/contact</loc></url>
+</urlset>
