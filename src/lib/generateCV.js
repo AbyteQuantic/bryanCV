@@ -30,7 +30,7 @@ const i18nData = {
       phone: { text: '+57 322 312 1409', url: 'https://wa.me/573223121409' },
     },
     summaryTitle: 'Professional Summary',
-    summary: 'Full Stack Engineer with 15+ years building backend systems and the products on top of them, mostly in Go, Java/Kotlin and Node.js/TypeScript with React, on AWS and GCP. I build with AI agents as part of everyday engineering: orchestrated coding agents, automated review gates before every PR and spec-first contracts, which lets me ship more without lowering the bar. Today I contract for Rappi (accounts-payable reconciliation for Rappi Turbo in six countries) and Justo (last-mile routing and logistics in Mexico). Before that I spent 6+ years at Chiper, a Series B B2B marketplace in Colombia, Mexico and Brazil, growing from QA Automation Lead to Full Stack & DevOps Lead to leading the e-commerce re-platforming in Go. That path is why I test what I build and take it to production myself.',
+    summary: 'Full Stack Engineer with 15+ years building backend systems and the products on top of them, mostly in Go, Java/Kotlin and Node.js/TypeScript with React, on AWS and GCP. I build with AI agents as part of everyday engineering: orchestrated coding agents, automated review gates before every PR and spec-first contracts, which lets me ship more without lowering the bar. Today I contract for Rappi (accounts-payable reconciliation for Rappi Turbo in six countries) and Justo (last-mile routing and logistics in Mexico). Before that I spent nearly 7 years at Chiper, a Series B B2B marketplace in Colombia, Mexico and Brazil, growing from Backend Engineer to QA Automation Lead to Senior Full Stack Engineer & DevOps Lead, where I led the e-commerce re-platforming in Go. That path is why I test what I build and take it to production myself.',
     competenciesTitle: 'Core Competencies',
     skills: [
       ['Backend & Architecture', 'Go, Java (Spring Boot), Kotlin, Node.js (NestJS, Express), Python. Microservices, REST/gRPC, hexagonal & Clean Architecture, DDD, event-driven design, Saga & Strangler Fig, spec-first APIs (OpenAPI, AsyncAPI).'],
@@ -67,20 +67,11 @@ const i18nData = {
         ],
       },
       {
-        title: 'Full Stack Engineer | E-commerce Re-platforming',
-        period: 'Jan 2026 - Jul 2026',
+        title: 'Senior Full Stack Engineer & DevOps Lead',
+        period: 'Jan 2025 - Jul 2026',
         company: 'Chiper \u2014 B2B Marketplace (Col, Mex, Bra) | Series B',
         bullets: [
-          'Led the renewal of the B2B e-commerce platform: carved catalog, cart and checkout out of the legacy monolith with the Strangler Fig pattern and async Pub/Sub, migrating incrementally with zero downtime.',
-          'Built the new services in Go (Clean Architecture, REST/gRPC, structured logging, metrics and tracing) on GCP Cloud Run, with table-driven tests at 80%+ coverage.',
-          'Two-developer squad (Go + React/Next.js) with end-to-end ownership.',
-        ],
-      },
-      {
-        title: 'Full Stack Engineer & DevOps Lead',
-        period: '2022 - 2025',
-        company: 'Chiper \u2014 B2B Marketplace (Col, Mex, Bra) | Series B',
-        bullets: [
+          'Led the 2026 e-commerce re-platforming: carved catalog, cart and checkout out of the legacy monolith with the Strangler Fig pattern and async Pub/Sub into new Go services (Clean Architecture, REST/gRPC) on GCP Cloud Run, with zero downtime. Two-developer squad.',
           'Migrated the monolith to microservices (LoopBack 3 to NestJS and Go) with saga patterns and zero-downtime deployments for 15K+ active users.',
           'Designed a 4-dimensional catalog visibility system (location, cluster, partner, stock) over MySQL, Elasticsearch and Redis, cutting catalog query latency by 45%.',
           'Owned GCP infrastructure (Cloud Run, Pub/Sub, GCS), CI/CD and Terraform: 99.9% uptime for 50K+ daily transactions in three countries.',
@@ -89,11 +80,19 @@ const i18nData = {
       },
       {
         title: 'QA Automation Lead',
-        period: '2019 - 2022',
-        company: 'Chiper \u2014 B2B Marketplace',
+        period: 'Jun 2022 - Jan 2025',
+        company: 'Chiper \u2014 B2B Marketplace (Col, Mex, Bra) | Series B',
         bullets: [
           'Built the QA Automation practice from scratch: Selenium, Appium and Pytest suites wired into CI/CD reduced production bugs by 40%.',
           'Added E2E testing, performance monitoring with BigQuery and Grafana, and automated reporting through the Jira Cloud REST API.',
+        ],
+      },
+      {
+        title: 'Backend Engineer',
+        period: 'Oct 2019 - Jun 2022',
+        company: 'Chiper \u2014 B2B Marketplace (Col, Mex, Bra) | Series B',
+        bullets: [
+          'Built core backend services for the B2B e-commerce platform: REST APIs and relational databases behind daily operations in three countries. Promoted to QA Automation Lead.',
         ],
       },
       {
@@ -138,7 +137,7 @@ const i18nData = {
       phone: { text: '+57 322 312 1409', url: 'https://wa.me/573223121409' },
     },
     summaryTitle: 'Perfil Profesional',
-    summary: 'Full Stack Engineer con mas de 15 anos construyendo sistemas backend y los productos que corren sobre ellos, sobre todo en Go, Java/Kotlin y Node.js/TypeScript con React, en AWS y GCP. Trabajo con agentes de IA como parte normal de la ingenieria: agentes de codigo orquestados, gates de revision automatica antes de cada PR y contratos spec-first, lo que me permite entregar mas sin bajar el estandar. Hoy trabajo como contractor para Rappi (conciliacion de cuentas por pagar de Rappi Turbo en seis paises) y Justo (ruteo y logistica de ultima milla en Mexico). Antes estuve mas de 6 anos en Chiper, marketplace B2B Serie B en Colombia, Mexico y Brasil, donde pase de QA Automation Lead a Full Stack & DevOps Lead y luego a liderar la renovacion del e-commerce en Go. Por ese camino pruebo lo que construyo y lo llevo a produccion yo mismo.',
+    summary: 'Full Stack Engineer con mas de 15 anos construyendo sistemas backend y los productos que corren sobre ellos, sobre todo en Go, Java/Kotlin y Node.js/TypeScript con React, en AWS y GCP. Trabajo con agentes de IA como parte normal de la ingenieria: agentes de codigo orquestados, gates de revision automatica antes de cada PR y contratos spec-first, lo que me permite entregar mas sin bajar el estandar. Hoy trabajo como contractor para Rappi (conciliacion de cuentas por pagar de Rappi Turbo en seis paises) y Justo (ruteo y logistica de ultima milla en Mexico). Antes estuve casi 7 anos en Chiper, marketplace B2B Serie B en Colombia, Mexico y Brasil, donde pase de Backend Engineer a QA Automation Lead y luego a Senior Full Stack Engineer & DevOps Lead, liderando la renovacion del e-commerce en Go. Por ese camino pruebo lo que construyo y lo llevo a produccion yo mismo.',
     competenciesTitle: 'Competencias Clave',
     skills: [
       ['Backend & Arquitectura', 'Go, Java (Spring Boot), Kotlin, Node.js (NestJS, Express), Python. Microservicios, REST/gRPC, arquitectura hexagonal y Clean Architecture, DDD, diseno event-driven, Saga y Strangler Fig, APIs spec-first (OpenAPI, AsyncAPI).'],
@@ -175,20 +174,11 @@ const i18nData = {
         ],
       },
       {
-        title: 'Full Stack Engineer | Renovacion E-commerce',
-        period: 'Ene 2026 - Jul 2026',
+        title: 'Senior Full Stack Engineer & DevOps Lead',
+        period: 'Ene 2025 - Jul 2026',
         company: 'Chiper - Marketplace B2B (Col, Mex, Bra) | Serie B',
         bullets: [
-          'Lidere la renovacion de la plataforma e-commerce B2B: separe catalogo, carrito y checkout del monolito legacy con el patron Strangler Fig y Pub/Sub asincrono, migrando de forma incremental y sin downtime.',
-          'Construi los nuevos servicios en Go (Clean Architecture, REST/gRPC, logging estructurado, metricas y tracing) en GCP Cloud Run, con table-driven tests y 80%+ de cobertura.',
-          'Squad de dos desarrolladores (Go + React/Next.js) con ownership de punta a punta.',
-        ],
-      },
-      {
-        title: 'Full Stack Engineer & DevOps Lead',
-        period: '2022 - 2025',
-        company: 'Chiper - Marketplace B2B (Col, Mex, Bra) | Serie B',
-        bullets: [
+          'Lidere la renovacion del e-commerce en 2026: separe catalogo, carrito y checkout del monolito legacy con el patron Strangler Fig y Pub/Sub asincrono hacia nuevos servicios en Go (Clean Architecture, REST/gRPC) en GCP Cloud Run, sin downtime. Squad de dos desarrolladores.',
           'Migre el monolito a microservicios (LoopBack 3 a NestJS y Go) con patrones saga y despliegues sin downtime para 15K+ usuarios activos.',
           'Disene un sistema de visibilidad de catalogo en 4 dimensiones (ubicacion, cluster, partner, stock) sobre MySQL, Elasticsearch y Redis, reduciendo la latencia de consultas en un 45%.',
           'Responsable de la infraestructura en GCP (Cloud Run, Pub/Sub, GCS), CI/CD y Terraform: 99.9% de uptime para 50K+ transacciones diarias en tres paises.',
@@ -197,11 +187,19 @@ const i18nData = {
       },
       {
         title: 'QA Automation Lead',
-        period: '2019 - 2022',
-        company: 'Chiper - Marketplace B2B',
+        period: 'Jun 2022 - Ene 2025',
+        company: 'Chiper - Marketplace B2B (Col, Mex, Bra) | Serie B',
         bullets: [
           'Cree la practica de QA Automation desde cero: suites de Selenium, Appium y Pytest integradas a CI/CD redujeron los bugs en produccion en un 40%.',
           'Sume pruebas E2E, monitoreo de rendimiento con BigQuery y Grafana y reportes automaticos con la API REST de Jira Cloud.',
+        ],
+      },
+      {
+        title: 'Backend Engineer',
+        period: 'Oct 2019 - Jun 2022',
+        company: 'Chiper - Marketplace B2B (Col, Mex, Bra) | Serie B',
+        bullets: [
+          'Construi servicios backend centrales de la plataforma e-commerce B2B: APIs REST y bases de datos relacionales detras de la operacion diaria en tres paises. Ascendido a QA Automation Lead.',
         ],
       },
       {

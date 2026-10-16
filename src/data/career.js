@@ -90,32 +90,29 @@ export const experience = {
     },
     {
       title: 'Chiper',
-      period: 'Jan 2026 – Jul 2026',
-      role: 'Full Stack Engineer — E-commerce Re-platforming',
-      desc: 'Led the renewal of the B2B e-commerce platform: carved bounded contexts out of the legacy monolith (catalog, cart, checkout) with the Strangler Fig pattern and async Pub/Sub, and built the new services in Go (Clean Architecture, REST/gRPC) on GCP Cloud Run with zero-downtime, incremental migration. Two-developer squad with end-to-end ownership.',
+      period: 'Jan 2025 – Jul 2026',
+      role: 'Senior Full Stack Engineer & DevOps Lead',
+      desc: 'Owned infrastructure, CI/CD and the monolith-to-microservices migration (LoopBack 3 → NestJS, Go) with saga patterns and zero-downtime deployments, keeping 99.9% uptime on GCP (Cloud Run, Pub/Sub, GCS) for 50K+ daily transactions in three countries. In 2026 led the e-commerce re-platforming: carved catalog, cart and checkout out of the monolith with the Strangler Fig pattern into new Go services. Introduced AI-assisted development (Claude Code, Cursor), cutting feature delivery time by 60%.',
       projects: [
-        { name: 'ecommerce-renewal', detail: 'New Go microservices decomposing the B2B e-commerce monolith' },
+        { name: 'ecommerce-renewal', detail: 'New Go microservices decomposing the B2B e-commerce monolith (2026)' },
         { name: 'reference-catalogue-api', detail: 'Catalog orchestrator microservice (NestJS, saga patterns)' },
-        { name: 'ms-pricing', detail: 'Isolated pricing engine for multi-location B2B' },
-      ],
-    },
-    {
-      title: 'Chiper',
-      period: '2022 – 2025',
-      role: 'Full Stack Engineer & DevOps Lead',
-      desc: 'Owned infrastructure, CI/CD and the monolith-to-microservices migration (LoopBack 3 → NestJS, Go) with saga patterns and zero-downtime deployments. Introduced AI-assisted development (Claude Code, Cursor), cutting feature delivery time by 60% while keeping 99.9% uptime on GCP (Cloud Run, Pub/Sub, GCS) for 50K+ daily transactions in three countries.',
-      projects: [
         { name: 'catalog-visibility', detail: '4-dimensional catalog system (Location, Cluster, Partner, Stock), 45% lower query latency' },
       ],
     },
     {
       title: 'Chiper',
-      period: '2019 – 2022',
+      period: 'Jun 2022 – Jan 2025',
       role: 'QA Automation Lead',
       desc: 'Built the QA Automation practice from scratch at a Series B B2B marketplace operating in Colombia, Mexico and Brazil. Selenium, Appium and Pytest suites wired into CI/CD reduced production bugs by 40%; added E2E and performance monitoring with BigQuery and Grafana.',
       projects: [
         { name: 'QA Framework', detail: 'Selenium + Appium + Pytest pipeline from zero' },
       ],
+    },
+    {
+      title: 'Chiper',
+      period: 'Oct 2019 – Jun 2022',
+      role: 'Backend Engineer',
+      desc: 'Built core backend services for the B2B e-commerce platform: REST APIs and relational databases behind daily operations in Colombia, Mexico and Brazil. Promoted to QA Automation Lead.',
     },
     {
       title: 'A_Byte Corp S.A.S.',
@@ -155,32 +152,29 @@ export const experience = {
     },
     {
       title: 'Chiper',
-      period: 'Ene 2026 – Jul 2026',
-      role: 'Full Stack Engineer — Renovación E-commerce',
-      desc: 'Lideré la renovación de la plataforma e-commerce B2B: separé bounded contexts del monolito legacy (catálogo, carrito, checkout) con el patrón Strangler Fig y Pub/Sub asíncrono, y construí los nuevos servicios en Go (Clean Architecture, REST/gRPC) sobre GCP Cloud Run con migración incremental y sin downtime. Squad de dos desarrolladores con ownership de punta a punta.',
+      period: 'Ene 2025 – Jul 2026',
+      role: 'Senior Full Stack Engineer & DevOps Lead',
+      desc: 'Responsable de infraestructura, CI/CD y la migración de monolito a microservicios (LoopBack 3 → NestJS, Go) con patrones saga y despliegues sin downtime, con 99.9% de uptime en GCP (Cloud Run, Pub/Sub, GCS) para 50K+ transacciones diarias en tres países. En 2026 lideré la renovación del e-commerce: separé catálogo, carrito y checkout del monolito con el patrón Strangler Fig hacia nuevos servicios en Go. Introduje el desarrollo asistido por IA (Claude Code, Cursor), reduciendo el tiempo de entrega en un 60%.',
       projects: [
-        { name: 'ecommerce-renewal', detail: 'Nuevos microservicios en Go descomponiendo el monolito de e-commerce B2B' },
+        { name: 'ecommerce-renewal', detail: 'Nuevos microservicios en Go descomponiendo el monolito de e-commerce B2B (2026)' },
         { name: 'reference-catalogue-api', detail: 'Microservicio orquestador de catálogo (NestJS, patrones saga)' },
-        { name: 'ms-pricing', detail: 'Motor de precios aislado para B2B multi-ubicación' },
-      ],
-    },
-    {
-      title: 'Chiper',
-      period: '2022 – 2025',
-      role: 'Full Stack Engineer & DevOps Lead',
-      desc: 'Responsable de infraestructura, CI/CD y la migración de monolito a microservicios (LoopBack 3 → NestJS, Go) con patrones saga y despliegues sin downtime. Introduje el desarrollo asistido por IA (Claude Code, Cursor), reduciendo el tiempo de entrega en un 60% con 99.9% de uptime en GCP (Cloud Run, Pub/Sub, GCS) para 50K+ transacciones diarias en tres países.',
-      projects: [
         { name: 'catalog-visibility', detail: 'Sistema de catálogo en 4 dimensiones (Ubicación, Cluster, Partner, Stock), 45% menos latencia en consultas' },
       ],
     },
     {
       title: 'Chiper',
-      period: '2019 – 2022',
+      period: 'Jun 2022 – Ene 2025',
       role: 'QA Automation Lead',
       desc: 'Creé la práctica de QA Automation desde cero en un marketplace B2B Serie B operando en Colombia, México y Brasil. Suites de Selenium, Appium y Pytest integradas a CI/CD redujeron los bugs en producción en un 40%; sumé pruebas E2E y monitoreo de rendimiento con BigQuery y Grafana.',
       projects: [
         { name: 'QA Framework', detail: 'Pipeline Selenium + Appium + Pytest desde cero' },
       ],
+    },
+    {
+      title: 'Chiper',
+      period: 'Oct 2019 – Jun 2022',
+      role: 'Backend Engineer',
+      desc: 'Construí servicios backend centrales de la plataforma e-commerce B2B: APIs REST y bases de datos relacionales detrás de la operación diaria en Colombia, México y Brasil. Ascendido a QA Automation Lead.',
     },
     {
       title: 'A_Byte Corp S.A.S.',

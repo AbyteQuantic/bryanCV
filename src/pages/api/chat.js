@@ -6,13 +6,13 @@ Debes responder siempre en el idioma en el que te pregunten (si te hablan en ing
 
 CONTEXTO DE BRAYAN MURCIA:
 
-1. Perfil General: 39 a\u00f1os, m\u00e1s de 15 a\u00f1os de experiencia. Senior Full Stack Engineer con perfil fuerte en backend (Go, Java/Spring Boot, Kotlin, Node.js/TypeScript) y React, en AWS y GCP. Trabaja con agentes de IA como parte normal de la ingenier\u00eda. Pas\u00f3 de ser CTO y Co-Fundador (9 a\u00f1os en A_Byte Corp) a m\u00e1s de 6 a\u00f1os en Chiper (marketplace B2B Serie B) y hoy trabaja como contractor para Rappi y Justo.
+1. Perfil General: 39 a\u00f1os, m\u00e1s de 15 a\u00f1os de experiencia. Senior Full Stack Engineer con perfil fuerte en backend (Go, Java/Spring Boot, Kotlin, Node.js/TypeScript) y React, en AWS y GCP. Trabaja con agentes de IA como parte normal de la ingenier\u00eda. Pas\u00f3 de ser CTO y Co-Fundador (9 a\u00f1os en A_Byte Corp) a casi 7 a\u00f1os en Chiper (marketplace B2B Serie B) y hoy trabaja como contractor para Rappi y Justo.
 
 2. Trabajo actual (desde agosto de 2026, ambos como contractor):
    - Rappi (v\u00eda 1clic): plataforma de cuentas por pagar de Rappi Turbo en seis pa\u00edses. Construye los flujos de excepci\u00f3n del three-way match (factura vs. orden de compra vs. recepci\u00f3n) por diferencias de precio y cantidad, el ciclo del caso para facturas sin orden de compra, control de concurrencia en MySQL y un portal para proveedores. Stack: Go (Echo, hexagonal), Kotlin/JVM, React 19 + TypeScript, MySQL 8, Kafka, AWS SQS/S3, Redis, Snowflake, OpenAPI/AsyncAPI.
    - Justo (supermercado en l\u00ednea en M\u00e9xico, equipo Last Mile): optimizaci\u00f3n de rutas con VROOM, ETAs con tr\u00e1fico (TomTom + Valhalla), A/B del costo de env\u00edo Express con flags de GrowthBook y migraci\u00f3n de servicios de Spring Boot 2.7 a 3.5. Stack: Java/Spring Boot, Node.js + TypeScript, Next.js, Python, AWS (EKS, DynamoDB, SNS/SQS).
 
-3. Progresi\u00f3n en Chiper (2019 a julio de 2026): QA Automation Lead (cre\u00f3 la pr\u00e1ctica desde cero y redujo bugs en producci\u00f3n un 40%), luego Full Stack Engineer & DevOps Lead, y en 2026 lider\u00f3 la renovaci\u00f3n del e-commerce B2B en Go.
+3. Progresi\u00f3n en Chiper (octubre de 2019 a julio de 2026, casi 7 a\u00f1os): entr\u00f3 como Backend Engineer (oct 2019), fue ascendido a QA Automation Lead (jun 2022; cre\u00f3 la pr\u00e1ctica desde cero y redujo bugs en producci\u00f3n un 40%) y luego a Senior Full Stack Engineer & DevOps Lead (ene 2025), donde en 2026 lider\u00f3 la renovaci\u00f3n del e-commerce B2B en Go.
 
 4. Impacto y M\u00e9tricas (Lo m\u00e1s importante):
    - Desarrollo ag\u00e9ntico: orquesta agentes de c\u00f3digo (Claude Code con subagentes, Codex, Cursor) y dise\u00f1\u00f3 un gate de revisi\u00f3n antes de cada PR que combina controles deterministas con revisores LLM especializados. En Chiper, el desarrollo asistido por IA redujo el ciclo de entrega de features un 60%.

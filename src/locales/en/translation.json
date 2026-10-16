@@ -25,7 +25,7 @@
     },
     "About": {
         "Title": "Full Stack Engineer with 15+ years building backend systems and the products on top of them, working with AI agents as part of everyday engineering.",
-        "Description": "I work mostly in Go, Java/Kotlin and Node.js/TypeScript with React, on AWS and GCP. Today I contract for Rappi, on accounts-payable reconciliation for Rappi Turbo in six countries, and for Justo, on last-mile routing and logistics in Mexico. Before that I spent 6+ years at Chiper, a Series B B2B marketplace, growing from QA Automation Lead to Full Stack & DevOps Lead to leading the e-commerce re-platforming in Go. I orchestrate coding agents, put automated review gates in front of every PR and write contracts first, so I can ship more without lowering the bar, and I test what I build and take it to production myself."
+        "Description": "I work mostly in Go, Java/Kotlin and Node.js/TypeScript with React, on AWS and GCP. Today I contract for Rappi, on accounts-payable reconciliation for Rappi Turbo in six countries, and for Justo, on last-mile routing and logistics in Mexico. Before that I spent nearly 7 years at Chiper, a Series B B2B marketplace, growing from Backend Engineer to QA Automation Lead to Senior Full Stack Engineer & DevOps Lead, where I led the e-commerce re-platforming in Go. I orchestrate coding agents, put automated review gates in front of every PR and write contracts first, so I can ship more without lowering the bar, and I test what I build and take it to production myself."
     },
     "ServicesSection": {
         "title": "Core Competencies",
