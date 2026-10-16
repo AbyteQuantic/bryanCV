@@ -65,12 +65,36 @@ export const education = {
 export const experience = {
   en: [
     {
-      title: 'Chiper',
-      period: 'Jan 2026 – Present',
-      role: 'Full Stack Developer — E-commerce Modernization Lead',
-      desc: 'Leading the end-to-end renewal of the B2B e-commerce platform: decomposing the legacy monolith into a clean Go microservices ecosystem (Strangler Fig, bounded contexts, async Pub/Sub) with zero-downtime, incremental migration. Designing and building new services in Go (Clean Architecture, REST/gRPC, goroutines, observability) deployed to GCP Cloud Run. Delivered as a lean 2-developer squad with full ownership, leveraging AI-assisted development (Claude Code, Cursor).',
+      title: 'Rappi (via 1clic)',
+      period: 'Aug 2026 – Present',
+      role: 'Full Stack Engineer · Contract',
+      desc: 'Accounts-payable platform for Rappi Turbo (quick commerce) across six Latin American countries: a three-way match of supplier invoices against purchase orders and goods receipts. I build the exception flows for price and quantity mismatches, handled as cases between Accounts Payable, Category Management and Supply. Go (Echo, hexagonal architecture), Kotlin/JVM matching pipeline, React 19 + TypeScript micro-frontends, MySQL 8, Kafka, AWS SQS/S3, Redis and Snowflake, with spec-first contracts (OpenAPI 3.1, AsyncAPI).',
       projects: [
-        { name: 'ecommerce-renewal', detail: 'New Go microservices decomposing the B2B e-commerce monolith (2026)' },
+        { name: 'Case lifecycle', detail: 'Invoices without a PO: automatic opening, reminders, escalation to Supply, auto-close on link and reopen on unlink' },
+        { name: 'Price & quantity cases', detail: 'Row locking and concurrency control in MySQL so simultaneous openings never duplicate a case' },
+        { name: 'Supplier portal', detail: 'Suppliers upload their PO; notifications to suppliers and internal teams, piloted per supplier' },
+        { name: 'Pre-PR review gate', detail: 'Deterministic checks (rules sweep, tests against real MySQL, contract verification) plus specialized LLM reviewers' },
+      ],
+    },
+    {
+      title: 'Justo',
+      period: 'Aug 2026 – Present',
+      role: 'Full Stack Engineer · Last Mile · Contract',
+      desc: 'Last-mile logistics for Justo, an online supermarket in Mexico: route planning, delivery ETAs, driver tools and delivery pricing. Java / Spring Boot microservices, Node.js + TypeScript BFFs, Next.js back-office, Python services, on AWS (EKS, DynamoDB, SNS/SQS) with OpenTelemetry and GrowthBook flags. I work with orchestrated coding agents and ship behind flags with staged rollouts.',
+      projects: [
+        { name: 'Route optimization', detail: 'VROOM by default in route creation, per-address service times and capacity rules for heavy supplies on motorcycles' },
+        { name: 'Traffic-aware ETAs', detail: 'TomTom traffic feeder for Valhalla, departure-time matrices and a calibration factor against Google Maps' },
+        { name: 'Express fee A/B', detail: 'Delivery fee by customer lifecycle segment behind GrowthBook flags, with a one-switch rollback' },
+        { name: 'Security gate', detail: 'Routing services migrated from Spring Boot 2.7 to 3.5 and dependencies patched to pass the CVE gate' },
+      ],
+    },
+    {
+      title: 'Chiper',
+      period: 'Jan 2026 – Jul 2026',
+      role: 'Full Stack Engineer — E-commerce Re-platforming',
+      desc: 'Led the renewal of the B2B e-commerce platform: carved bounded contexts out of the legacy monolith (catalog, cart, checkout) with the Strangler Fig pattern and async Pub/Sub, and built the new services in Go (Clean Architecture, REST/gRPC) on GCP Cloud Run with zero-downtime, incremental migration. Two-developer squad with end-to-end ownership.',
+      projects: [
+        { name: 'ecommerce-renewal', detail: 'New Go microservices decomposing the B2B e-commerce monolith' },
         { name: 'reference-catalogue-api', detail: 'Catalog orchestrator microservice (NestJS, saga patterns)' },
         { name: 'ms-pricing', detail: 'Isolated pricing engine for multi-location B2B' },
       ],
@@ -78,22 +102,19 @@ export const experience = {
     {
       title: 'Chiper',
       period: '2022 – 2025',
-      role: 'Fullstack Engineer & DevOps Lead',
-      desc: 'Led infrastructure, CI/CD and the monolith-to-microservices migration (LoopBack 3 → NestJS, Go) with saga patterns and zero-downtime deployments. Drove AI-Augmented workflows (Claude Code, Cursor) cutting feature delivery time by 60% while sustaining 99.9% uptime on GCP (Cloud Run, Pub/Sub, GCS) for 50K+ daily cross-border transactions.',
+      role: 'Full Stack Engineer & DevOps Lead',
+      desc: 'Owned infrastructure, CI/CD and the monolith-to-microservices migration (LoopBack 3 → NestJS, Go) with saga patterns and zero-downtime deployments. Introduced AI-assisted development (Claude Code, Cursor), cutting feature delivery time by 60% while keeping 99.9% uptime on GCP (Cloud Run, Pub/Sub, GCS) for 50K+ daily transactions in three countries.',
       projects: [
-        { name: 'catalog-visibility', detail: '4-dimensional catalog system (Location, Cluster, Partner, Stock)' },
-        { name: 'VendIA', detail: 'AI-powered POS with Gemini OCR for invoice processing (personal, 2026)' },
-        { name: 'bryanCV', detail: 'AI-powered portfolio with chatbot, recruiter dashboard & dynamic CV (brayanmurcia.lat, 2026)' },
+        { name: 'catalog-visibility', detail: '4-dimensional catalog system (Location, Cluster, Partner, Stock), 45% lower query latency' },
       ],
     },
     {
       title: 'Chiper',
       period: '2019 – 2022',
       role: 'QA Automation Lead',
-      desc: 'Built the QA Automation department from scratch at a Series B startup operating in Colombia, Mexico and Brazil. Implemented Selenium, Appium and Pytest frameworks, reducing production bugs by 40%. Introduced CI/CD-integrated E2E testing and performance monitoring with BigQuery and Grafana.',
+      desc: 'Built the QA Automation practice from scratch at a Series B B2B marketplace operating in Colombia, Mexico and Brazil. Selenium, Appium and Pytest suites wired into CI/CD reduced production bugs by 40%; added E2E and performance monitoring with BigQuery and Grafana.',
       projects: [
         { name: 'QA Framework', detail: 'Selenium + Appium + Pytest pipeline from zero' },
-        { name: 'SiembraCo', detail: 'AgriTech platform for crop management (personal project, 2025)' },
       ],
     },
     {
@@ -109,12 +130,36 @@ export const experience = {
   ],
   es: [
     {
-      title: 'Chiper',
-      period: 'Ene 2026 – Presente',
-      role: 'Full Stack Developer — Líder de Renovación E-commerce',
-      desc: 'Lidero la renovación integral de la plataforma e-commerce B2B: descompongo el monolito legacy en un ecosistema limpio de microservicios en Go (Strangler Fig, bounded contexts, Pub/Sub asíncrono) con migración incremental y sin downtime. Diseño y construyo nuevos servicios en Go (Clean Architecture, REST/gRPC, goroutines, observabilidad) desplegados en GCP Cloud Run. Lo saco adelante en un squad compacto de 2 desarrolladores con ownership total, apalancado en desarrollo asistido por IA (Claude Code, Cursor).',
+      title: 'Rappi (vía 1clic)',
+      period: 'Ago 2026 – Presente',
+      role: 'Full Stack Engineer · Contrato',
+      desc: 'Plataforma de cuentas por pagar de Rappi Turbo (comercio rápido) en seis países de Latinoamérica: conciliación de facturas de proveedores contra órdenes de compra y recepciones (three-way match). Construyo los flujos de excepción por diferencias de precio y de cantidad, que se gestionan como casos entre Cuentas por Pagar, Compras (CatMan) y Supply. Go (Echo, arquitectura hexagonal), pipeline de calce en Kotlin/JVM, micro-frontends en React 19 + TypeScript, MySQL 8, Kafka, AWS SQS/S3, Redis y Snowflake, con contratos spec-first (OpenAPI 3.1, AsyncAPI).',
       projects: [
-        { name: 'ecommerce-renewal', detail: 'Nuevos microservicios en Go descomponiendo el monolito de e-commerce B2B (2026)' },
+        { name: 'Ciclo del caso', detail: 'Facturas sin orden de compra: apertura automática, recordatorios, escalamiento a Supply, cierre al enlazar y reapertura si el enlace se deshace' },
+        { name: 'Casos de precio y cantidad', detail: 'Bloqueo de filas y control de concurrencia en MySQL para que aperturas simultáneas nunca dupliquen un caso' },
+        { name: 'Portal de proveedores', detail: 'El proveedor carga su orden de compra; avisos al proveedor y a equipos internos, con piloto por proveedor' },
+        { name: 'Gate de revisión antes del PR', detail: 'Controles deterministas (barrido de reglas, pruebas contra MySQL real, verificación de contratos) y revisores LLM especializados' },
+      ],
+    },
+    {
+      title: 'Justo',
+      period: 'Ago 2026 – Presente',
+      role: 'Full Stack Engineer · Last Mile · Contrato',
+      desc: 'Logística de última milla de Justo, supermercado en línea en México: planeación de rutas, ETAs de entrega, herramientas para conductores y precio del envío. Microservicios en Java / Spring Boot, BFFs en Node.js + TypeScript, back-office en Next.js y servicios en Python, sobre AWS (EKS, DynamoDB, SNS/SQS) con OpenTelemetry y flags de GrowthBook. Trabajo con agentes de código orquestados y despliego detrás de flags con activación gradual.',
+      projects: [
+        { name: 'Optimización de rutas', detail: 'VROOM por defecto al crear rutas, tiempos de servicio por dirección y reglas de capacidad para insumos pesados en motos' },
+        { name: 'ETAs con tráfico', detail: 'Feeder de tráfico TomTom para Valhalla, matrices con hora de salida y factor de calibración contra Google Maps' },
+        { name: 'A/B del fee Express', detail: 'Costo de envío por segmento de ciclo de vida del cliente detrás de flags de GrowthBook, con reversa en un solo switch' },
+        { name: 'Gate de seguridad', detail: 'Servicios de ruteo migrados de Spring Boot 2.7 a 3.5 y dependencias parchadas para pasar el gate de CVEs' },
+      ],
+    },
+    {
+      title: 'Chiper',
+      period: 'Ene 2026 – Jul 2026',
+      role: 'Full Stack Engineer — Renovación E-commerce',
+      desc: 'Lideré la renovación de la plataforma e-commerce B2B: separé bounded contexts del monolito legacy (catálogo, carrito, checkout) con el patrón Strangler Fig y Pub/Sub asíncrono, y construí los nuevos servicios en Go (Clean Architecture, REST/gRPC) sobre GCP Cloud Run con migración incremental y sin downtime. Squad de dos desarrolladores con ownership de punta a punta.',
+      projects: [
+        { name: 'ecommerce-renewal', detail: 'Nuevos microservicios en Go descomponiendo el monolito de e-commerce B2B' },
         { name: 'reference-catalogue-api', detail: 'Microservicio orquestador de catálogo (NestJS, patrones saga)' },
         { name: 'ms-pricing', detail: 'Motor de precios aislado para B2B multi-ubicación' },
       ],
@@ -122,22 +167,19 @@ export const experience = {
     {
       title: 'Chiper',
       period: '2022 – 2025',
-      role: 'Fullstack Engineer & DevOps Lead',
-      desc: 'Lideré infraestructura, CI/CD y la migración de monolito a microservicios (LoopBack 3 → NestJS, Go) con patrones saga y despliegues sin downtime. Impulsé flujos con IA (Claude Code, Cursor) reduciendo el tiempo de entrega en un 60% manteniendo 99.9% de uptime en GCP (Cloud Run, Pub/Sub, GCS) para 50K+ transacciones transfronterizas diarias.',
+      role: 'Full Stack Engineer & DevOps Lead',
+      desc: 'Responsable de infraestructura, CI/CD y la migración de monolito a microservicios (LoopBack 3 → NestJS, Go) con patrones saga y despliegues sin downtime. Introduje el desarrollo asistido por IA (Claude Code, Cursor), reduciendo el tiempo de entrega en un 60% con 99.9% de uptime en GCP (Cloud Run, Pub/Sub, GCS) para 50K+ transacciones diarias en tres países.',
       projects: [
-        { name: 'catalog-visibility', detail: 'Sistema de catálogo en 4 dimensiones (Ubicación, Cluster, Partner, Stock)' },
-        { name: 'VendIA', detail: 'POS con IA y OCR de Gemini para procesamiento de facturas (personal, 2026)' },
-        { name: 'bryanCV', detail: 'Portafolio con IA, chatbot, dashboard de reclutadores y CV dinámico (brayanmurcia.lat, 2026)' },
+        { name: 'catalog-visibility', detail: 'Sistema de catálogo en 4 dimensiones (Ubicación, Cluster, Partner, Stock), 45% menos latencia en consultas' },
       ],
     },
     {
       title: 'Chiper',
       period: '2019 – 2022',
       role: 'QA Automation Lead',
-      desc: 'Creó el departamento de QA Automation desde cero en una startup Serie B operando en Colombia, México y Brasil. Implementó frameworks de Selenium, Appium y Pytest, reduciendo bugs en producción en un 40%. Introdujo testing E2E integrado con CI/CD y monitoreo de rendimiento con BigQuery y Grafana.',
+      desc: 'Creé la práctica de QA Automation desde cero en un marketplace B2B Serie B operando en Colombia, México y Brasil. Suites de Selenium, Appium y Pytest integradas a CI/CD redujeron los bugs en producción en un 40%; sumé pruebas E2E y monitoreo de rendimiento con BigQuery y Grafana.',
       projects: [
         { name: 'QA Framework', detail: 'Pipeline Selenium + Appium + Pytest desde cero' },
-        { name: 'SiembraCo', detail: 'Plataforma AgriTech para gestión de cultivos (proyecto personal, 2025)' },
       ],
     },
     {

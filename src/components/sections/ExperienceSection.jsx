@@ -58,8 +58,8 @@ const ExperienceSection = () => {
 
       <p className="mil-up mil-mb-60" style={s.intro}>
         {isEs
-          ? 'De CTO y Co-Fundador a Full Stack Developer & Arquitecto de Soluciones: 15+ años construyendo, modernizando y escalando sistemas en producción.'
-          : 'From CTO & Co-Founder to Full Stack Developer & Solutions Architect: 15+ years building, modernizing and scaling production systems.'}
+          ? 'De CTO y Co-Fundador a Senior Full Stack Engineer: 15+ años construyendo, modernizando y escalando sistemas en producción.'
+          : 'From CTO & Co-Founder to Senior Full Stack Engineer: 15+ years building, modernizing and scaling production systems.'}
       </p>
 
       <div className="row justify-content-center">

@@ -20,24 +20,24 @@
     "404": "404",
     "HeroOneSection": {
         "FirstGreeting": "Hello, my name is",
-        "CarreerDescription": "Full Stack Developer & AI-Augmented Solutions Architect",
+        "CarreerDescription": "Senior Full Stack Engineer · Backend & AI-Agentic Development",
         "ScrollDown": "Scroll down - Scroll down - "
     },
     "About": {
-        "Title": "Full Stack Developer & AI-Augmented Solutions Architect with 15+ years building scalable backends, modernizing legacy systems and accelerating delivery across Latin America.",
-        "Description": "From CTO & Co-Founder to Full Stack Developer & Solutions Architect (also leading DevOps) at high-growth startups operating across Colombia, Mexico and Brazil. Currently leading the renewal of a B2B e-commerce platform — decomposing legacy monoliths into clean Go microservices. I design and build the systems end-to-end, lead monolith-to-microservices migrations and leverage AI-Assisted Development (Claude Code, Cursor) to multiply team velocity on critical Backend and Cloud deliverables without sacrificing stability or quality."
+        "Title": "Full Stack Engineer with 15+ years building backend systems and the products on top of them, working with AI agents as part of everyday engineering.",
+        "Description": "I work mostly in Go, Java/Kotlin and Node.js/TypeScript with React, on AWS and GCP. Today I contract for Rappi, on accounts-payable reconciliation for Rappi Turbo in six countries, and for Justo, on last-mile routing and logistics in Mexico. Before that I spent 6+ years at Chiper, a Series B B2B marketplace, growing from QA Automation Lead to Full Stack & DevOps Lead to leading the e-commerce re-platforming in Go. I orchestrate coding agents, put automated review gates in front of every PR and write contracts first, so I can ship more without lowering the bar, and I test what I build and take it to production myself."
     },
     "ServicesSection": {
         "title": "Core Competencies",
-        "Title0": "DevOps & Cloud",
-        "text0": "Production infrastructure on GCP and AWS with Docker, Kubernetes and Terraform. CI/CD pipelines and multi-country deployments with high availability.",
-        "Title1": "AI-Augmented Dev",
-        "text1": "AI-Assisted workflows with Claude Code and Cursor accelerating delivery by 60%. Agentic pipelines for code generation, review and deployment.",
-        "Title2": "Legacy to Microservices",
-        "text2": "Monolith-to-NestJS migrations (from LoopBack 3) with saga patterns, event-driven systems (Pub/Sub) and progressive decoupling without downtime."
+        "Title0": "Backend & Microservices",
+        "text0": "Go, Java/Spring Boot, Kotlin and Node.js services with hexagonal and Clean Architecture, event-driven messaging (Kafka, SQS, Pub/Sub) and zero-downtime migrations out of legacy monoliths.",
+        "Title1": "AI-Agentic Development",
+        "text1": "Orchestrated coding agents (Claude Code, Codex, Cursor), LLM review gates before every PR and spec-first contracts. Also LLM features in products, like this site's chatbot.",
+        "Title2": "Full Stack Delivery",
+        "text2": "React and Next.js front ends, CI/CD, Docker and Kubernetes on AWS and GCP, feature flags and test automation, so features reach production end to end."
     },
     "ProgrammingLanguagesSkills": {
-        "title": "DevOps, Cloud & Backend"
+        "title": "Backend, Cloud & Delivery"
     },
     "TestingLeadershipSkill": {
         "title": "AI, QA & Leadership"
