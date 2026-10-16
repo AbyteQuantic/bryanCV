@@ -20,11 +20,11 @@ const i18nData = {
     role: 'Senior Full Stack Engineer  |  Backend & AI-Agentic Development',
     contactLines: [
       'abytecorp@gmail.com  |  +57 322 312 1409  |  brayanmurcia.lat  |  Colombia',
-      'linkedin.com/in/brayan-murcia  |  github.com/AbyteQuantic  |  English B1  |  15+ years',
+      'linkedin.com/in/brayan-murcia-sanchez-51121a95  |  github.com/AbyteQuantic  |  English B1  |  15+ years',
     ],
     links: {
       site: { text: 'brayanmurcia.lat', url: 'https://www.brayanmurcia.lat' },
-      linkedin: { text: 'linkedin.com/in/brayan-murcia', url: 'https://www.linkedin.com/in/brayan-murcia/' },
+      linkedin: { text: 'linkedin.com/in/brayan-murcia-sanchez-51121a95', url: 'https://www.linkedin.com/in/brayan-murcia-sanchez-51121a95/' },
       github: { text: 'github.com/AbyteQuantic', url: 'https://github.com/AbyteQuantic' },
       email: { text: 'abytecorp@gmail.com', url: 'mailto:abytecorp@gmail.com' },
       phone: { text: '+57 322 312 1409', url: 'https://wa.me/573223121409' },
@@ -128,11 +128,11 @@ const i18nData = {
     role: 'Senior Full Stack Engineer  |  Backend y Desarrollo Agentico con IA',
     contactLines: [
       'abytecorp@gmail.com  |  +57 322 312 1409  |  brayanmurcia.lat  |  Colombia',
-      'linkedin.com/in/brayan-murcia  |  github.com/AbyteQuantic  |  Ingles B1  |  15+ anos',
+      'linkedin.com/in/brayan-murcia-sanchez-51121a95  |  github.com/AbyteQuantic  |  Ingles B1  |  15+ anos',
     ],
     links: {
       site: { text: 'brayanmurcia.lat', url: 'https://www.brayanmurcia.lat' },
-      linkedin: { text: 'linkedin.com/in/brayan-murcia', url: 'https://www.linkedin.com/in/brayan-murcia/' },
+      linkedin: { text: 'linkedin.com/in/brayan-murcia-sanchez-51121a95', url: 'https://www.linkedin.com/in/brayan-murcia-sanchez-51121a95/' },
       github: { text: 'github.com/AbyteQuantic', url: 'https://github.com/AbyteQuantic' },
       email: { text: 'abytecorp@gmail.com', url: 'mailto:abytecorp@gmail.com' },
       phone: { text: '+57 322 312 1409', url: 'https://wa.me/573223121409' },

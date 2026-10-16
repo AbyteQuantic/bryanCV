@@ -221,8 +221,8 @@ const getSocialLinks = (isEs) => [
   {
     id: 'linkedin',
     icon: () => <LinkedInSvg />,
-    label: 'linkedin.com/in/brayan-murcia',
-    href: 'https://www.linkedin.com/in/brayan-murcia/',
+    label: 'linkedin.com/in/brayan-murcia-sanchez-51121a95',
+    href: 'https://www.linkedin.com/in/brayan-murcia-sanchez-51121a95/',
     external: true,
   },
   {
