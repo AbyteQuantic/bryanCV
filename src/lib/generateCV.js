@@ -30,7 +30,7 @@ const i18nData = {
       phone: { text: '+57 322 312 1409', url: 'https://wa.me/573223121409' },
     },
     summaryTitle: 'Professional Summary',
-    summary: 'Full Stack Engineer with 15+ years building backend systems and the products on top of them, mostly in Go, Java/Kotlin and Node.js/TypeScript with React, on AWS and GCP. I build with AI agents as part of everyday engineering: orchestrated coding agents, automated review gates before every PR and spec-first contracts, which lets me ship more without lowering the bar. Today I contract for Rappi (accounts-payable reconciliation for Rappi Turbo in six countries) and Justo (last-mile routing and logistics in Mexico). Before that I spent nearly 7 years at Chiper, a Series B B2B marketplace in Colombia, Mexico and Brazil, growing from Backend Engineer to QA Automation Lead to Senior Full Stack Engineer & DevOps Lead, where I led the e-commerce re-platforming in Go. That path is why I test what I build and take it to production myself.',
+    summary: 'Full Stack Engineer with 15+ years building backend systems and the products on top of them, mostly in Go, Java/Kotlin and Node.js/TypeScript with React, on AWS and GCP. I build with AI agents as part of everyday engineering: orchestrated coding agents, automated review gates before every PR and spec-first contracts, which lets me ship more without lowering the bar. Today I work as a contractor through 1clic and for Justo, an online supermarket in Mexico. Before that I spent nearly 7 years at Chiper, a Series B B2B marketplace in Colombia, Mexico and Brazil, growing from Backend Engineer to QA Automation Lead to Senior Full Stack Engineer & DevOps Lead, where I led the e-commerce re-platforming in Go. That path is why I test what I build and take it to production myself.',
     competenciesTitle: 'Core Competencies',
     skills: [
       ['Backend & Architecture', 'Go, Java (Spring Boot), Kotlin, Node.js (NestJS, Express), Python. Microservices, REST/gRPC, hexagonal & Clean Architecture, DDD, event-driven design, Saga & Strangler Fig, spec-first APIs (OpenAPI, AsyncAPI).'],
@@ -45,25 +45,18 @@ const i18nData = {
       {
         title: 'Full Stack Engineer (Contract)',
         period: 'Aug 2026 - Present',
-        company: 'Rappi, via 1clic \u2014 Rappi Turbo accounts payable (6 countries)',
+        company: '1clic',
         bullets: [
-          'Build the exception flows of a three-way match that reconciles supplier invoices against purchase orders and goods receipts: price and quantity mismatches handled as cases between Accounts Payable, Category Management and Supply.',
-          'Delivered the full case lifecycle for invoices without a PO: automatic opening, reminders, escalation to Supply, auto-close when the invoice is linked and reopen if the link is undone.',
-          'Made case opening safe under concurrency with MySQL row locking, so simultaneous openings never duplicate a case; designed the "to handle" board that creates each case when someone takes it instead of bulk-inserting.',
-          'Built a supplier portal to upload purchase orders, with notifications to suppliers and internal teams piloted per supplier.',
-          'Stack: Go (Echo, hexagonal architecture), Kotlin/JVM matching pipeline, React 19 + TypeScript micro-frontends, MySQL 8 + Flyway, Kafka, AWS SQS/S3, Redis, Snowflake; spec-first with OpenAPI 3.1 and AsyncAPI. Pre-PR gate combining deterministic checks with specialized LLM reviewers.',
+          'Contract full stack engineering: backend services in Go and Kotlin, React + TypeScript front ends, MySQL, Kafka and AWS, with spec-first contracts (OpenAPI, AsyncAPI).',
+          'AI-assisted workflow with a pre-PR gate that combines deterministic checks with specialized LLM reviewers. Project details are confidential.',
         ],
       },
       {
-        title: 'Full Stack Engineer, Last Mile (Contract)',
+        title: 'Full Stack Engineer (Contract)',
         period: 'Aug 2026 - Present',
         company: 'Justo \u2014 Online supermarket, Mexico',
         bullets: [
-          'Made VROOM the default optimizer for route creation, feeding it per-address service times and capacity rules that keep heavy supplies off motorcycles and bicycles.',
-          'Added traffic-aware ETAs: a TomTom traffic feeder for the self-hosted Valhalla router, departure-time distance matrices and a duration calibration factor checked against Google Maps.',
-          'Shipped the Express delivery-fee A/B by customer lifecycle segment behind GrowthBook flags, with a one-switch rollback for the business team.',
-          'Migrated routing services from Spring Boot 2.7 to 3.5 and patched dependencies to pass the CVE security gate; driver-app parking suggestions PoC end to end (BFF + web).',
-          'Stack: Java / Spring Boot, Node.js + TypeScript BFFs, Next.js, Python, AWS (EKS, DynamoDB, SNS/SQS), OpenTelemetry, Jenkins.',
+          'Contract full stack engineering: Java / Spring Boot and Node.js + TypeScript services, Next.js and Python on AWS (EKS, DynamoDB, SNS/SQS), shipped behind feature flags with staged rollouts. Project details are confidential.',
         ],
       },
       {
@@ -108,7 +101,7 @@ const i18nData = {
     ],
     projectsTitle: 'Strategic Projects',
     projects: [
-      ['VendIA (SaaS POS)', 'AI-powered offline-first POS for traditional retail. Go + Flutter + Next.js. Gemini AI OCR, age-inclusive UI (65+), multi-tenant, QR payments. End-to-end SaaS scaling.'],
+      ['VendIA (SaaS POS)', 'Point-of-sale SaaS for neighborhood retail. Go + Flutter + Next.js.'],
       ['SiembraCo (AgriTech)', 'Crop rental marketplace with real-time geolocation, WebSocket tracking, satellite imagery and ROI projections. NestJS + Python pipeline.'],
       ['Princess XV', 'Interactive event platform with 3D scroll animations (GSAP, Three.js), AI photo booth, real-time WebSocket voting. 200+ concurrent users.'],
       ['FacturApp (FinTech)', 'DIAN-compliant e-invoicing. UBL 2.1 XML, X.509 signing, automated tax calculations, PDF + WhatsApp delivery. Multi-tenant B2B.'],
@@ -137,7 +130,7 @@ const i18nData = {
       phone: { text: '+57 322 312 1409', url: 'https://wa.me/573223121409' },
     },
     summaryTitle: 'Perfil Profesional',
-    summary: 'Full Stack Engineer con mas de 15 anos construyendo sistemas backend y los productos que corren sobre ellos, sobre todo en Go, Java/Kotlin y Node.js/TypeScript con React, en AWS y GCP. Trabajo con agentes de IA como parte normal de la ingenieria: agentes de codigo orquestados, gates de revision automatica antes de cada PR y contratos spec-first, lo que me permite entregar mas sin bajar el estandar. Hoy trabajo como contractor para Rappi (conciliacion de cuentas por pagar de Rappi Turbo en seis paises) y Justo (ruteo y logistica de ultima milla en Mexico). Antes estuve casi 7 anos en Chiper, marketplace B2B Serie B en Colombia, Mexico y Brasil, donde pase de Backend Engineer a QA Automation Lead y luego a Senior Full Stack Engineer & DevOps Lead, liderando la renovacion del e-commerce en Go. Por ese camino pruebo lo que construyo y lo llevo a produccion yo mismo.',
+    summary: 'Full Stack Engineer con mas de 15 anos construyendo sistemas backend y los productos que corren sobre ellos, sobre todo en Go, Java/Kotlin y Node.js/TypeScript con React, en AWS y GCP. Trabajo con agentes de IA como parte normal de la ingenieria: agentes de codigo orquestados, gates de revision automatica antes de cada PR y contratos spec-first, lo que me permite entregar mas sin bajar el estandar. Hoy trabajo como contractor a traves de 1clic y para Justo, supermercado en linea en Mexico. Antes estuve casi 7 anos en Chiper, marketplace B2B Serie B en Colombia, Mexico y Brasil, donde pase de Backend Engineer a QA Automation Lead y luego a Senior Full Stack Engineer & DevOps Lead, liderando la renovacion del e-commerce en Go. Por ese camino pruebo lo que construyo y lo llevo a produccion yo mismo.',
     competenciesTitle: 'Competencias Clave',
     skills: [
       ['Backend & Arquitectura', 'Go, Java (Spring Boot), Kotlin, Node.js (NestJS, Express), Python. Microservicios, REST/gRPC, arquitectura hexagonal y Clean Architecture, DDD, diseno event-driven, Saga y Strangler Fig, APIs spec-first (OpenAPI, AsyncAPI).'],
@@ -152,25 +145,18 @@ const i18nData = {
       {
         title: 'Full Stack Engineer (Contrato)',
         period: 'Ago 2026 - Presente',
-        company: 'Rappi, via 1clic - Cuentas por pagar de Rappi Turbo (6 paises)',
+        company: '1clic',
         bullets: [
-          'Construyo los flujos de excepcion de un three-way match que concilia facturas de proveedores contra ordenes de compra y recepciones: diferencias de precio y de cantidad gestionadas como casos entre Cuentas por Pagar, Compras (CatMan) y Supply.',
-          'Entregue el ciclo completo del caso para facturas sin orden de compra: apertura automatica, recordatorios, escalamiento a Supply, cierre automatico al enlazar la factura y reapertura si el enlace se deshace.',
-          'Hice segura la apertura de casos bajo concurrencia con bloqueo de filas en MySQL, sin duplicados ante aperturas simultaneas; disene el tablero "Por gestionar" que crea cada caso al tomarlo en vez de insertarlos en lote.',
-          'Construi el portal para que el proveedor cargue su orden de compra, con avisos al proveedor y a equipos internos y piloto por proveedor.',
-          'Stack: Go (Echo, arquitectura hexagonal), pipeline de calce en Kotlin/JVM, micro-frontends en React 19 + TypeScript, MySQL 8 + Flyway, Kafka, AWS SQS/S3, Redis, Snowflake; spec-first con OpenAPI 3.1 y AsyncAPI. Gate antes del PR con controles deterministas y revisores LLM especializados.',
+          'Ingenieria full stack por contrato: servicios backend en Go y Kotlin, front ends en React + TypeScript, MySQL, Kafka y AWS, con contratos spec-first (OpenAPI, AsyncAPI).',
+          'Flujo de trabajo asistido por IA con un gate antes del PR que combina controles deterministas y revisores LLM especializados. Los detalles de los proyectos son confidenciales.',
         ],
       },
       {
-        title: 'Full Stack Engineer, Last Mile (Contrato)',
+        title: 'Full Stack Engineer (Contrato)',
         period: 'Ago 2026 - Presente',
         company: 'Justo - Supermercado en linea, Mexico',
         bullets: [
-          'Deje VROOM como optimizador por defecto al crear rutas, alimentado con tiempos de servicio por direccion y reglas de capacidad que sacan los insumos pesados de motos y bicicletas.',
-          'Agregue ETAs con trafico: feeder de trafico TomTom para el router Valhalla propio, matrices de distancia con hora de salida y un factor de calibracion de duracion contrastado con Google Maps.',
-          'Puse en marcha el A/B del costo de envio Express por segmento de ciclo de vida del cliente detras de flags de GrowthBook, con reversa en un solo switch para negocio.',
-          'Migre servicios de ruteo de Spring Boot 2.7 a 3.5 y parche dependencias para pasar el gate de seguridad de CVEs; PoC de sugerencias de estacionamiento en la app del conductor de punta a punta (BFF + web).',
-          'Stack: Java / Spring Boot, BFFs en Node.js + TypeScript, Next.js, Python, AWS (EKS, DynamoDB, SNS/SQS), OpenTelemetry, Jenkins.',
+          'Ingenieria full stack por contrato: servicios en Java / Spring Boot y Node.js + TypeScript, Next.js y Python sobre AWS (EKS, DynamoDB, SNS/SQS), desplegados detras de feature flags con activacion gradual. Los detalles de los proyectos son confidenciales.',
         ],
       },
       {
@@ -215,7 +201,7 @@ const i18nData = {
     ],
     projectsTitle: 'Proyectos Estrategicos',
     projects: [
-      ['VendIA (SaaS POS)', 'POS offline-first con IA para retail tradicional. Go + Flutter + Next.js. OCR Gemini AI, UI inclusiva (65+), multi-tenant, pagos QR. Escalamiento SaaS end-to-end.'],
+      ['VendIA (SaaS POS)', 'SaaS de punto de venta para tiendas de barrio. Go + Flutter + Next.js.'],
       ['SiembraCo (AgriTech)', 'Marketplace de cultivos con geolocalizacion en tiempo real, tracking WebSocket, imagenes satelitales y proyecciones ROI. NestJS + Python.'],
       ['Princess XV', 'Plataforma interactiva con animaciones 3D (GSAP, Three.js), photo booth IA, votacion WebSocket en tiempo real. 200+ usuarios concurrentes.'],
       ['FacturApp (FinTech)', 'Facturacion electronica DIAN. XML UBL 2.1, firma X.509, calculos fiscales automaticos, entrega PDF + WhatsApp. Multi-tenant B2B.'],

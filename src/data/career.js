@@ -65,28 +65,16 @@ export const education = {
 export const experience = {
   en: [
     {
-      title: 'Rappi (via 1clic)',
+      title: '1clic',
       period: 'Aug 2026 – Present',
       role: 'Full Stack Engineer · Contract',
-      desc: 'Accounts-payable platform for Rappi Turbo (quick commerce) across six Latin American countries: a three-way match of supplier invoices against purchase orders and goods receipts. I build the exception flows for price and quantity mismatches, handled as cases between Accounts Payable, Category Management and Supply. Go (Echo, hexagonal architecture), Kotlin/JVM matching pipeline, React 19 + TypeScript micro-frontends, MySQL 8, Kafka, AWS SQS/S3, Redis and Snowflake, with spec-first contracts (OpenAPI 3.1, AsyncAPI).',
-      projects: [
-        { name: 'Case lifecycle', detail: 'Invoices without a PO: automatic opening, reminders, escalation to Supply, auto-close on link and reopen on unlink' },
-        { name: 'Price & quantity cases', detail: 'Row locking and concurrency control in MySQL so simultaneous openings never duplicate a case' },
-        { name: 'Supplier portal', detail: 'Suppliers upload their PO; notifications to suppliers and internal teams, piloted per supplier' },
-        { name: 'Pre-PR review gate', detail: 'Deterministic checks (rules sweep, tests against real MySQL, contract verification) plus specialized LLM reviewers' },
-      ],
+      desc: 'Contract engineering through 1clic: backend services in Go and Kotlin, React + TypeScript front ends, MySQL, Kafka and AWS, with spec-first contracts and an AI-assisted review gate before every PR. Project details are confidential.',
     },
     {
       title: 'Justo',
       period: 'Aug 2026 – Present',
-      role: 'Full Stack Engineer · Last Mile · Contract',
-      desc: 'Last-mile logistics for Justo, an online supermarket in Mexico: route planning, delivery ETAs, driver tools and delivery pricing. Java / Spring Boot microservices, Node.js + TypeScript BFFs, Next.js back-office, Python services, on AWS (EKS, DynamoDB, SNS/SQS) with OpenTelemetry and GrowthBook flags. I work with orchestrated coding agents and ship behind flags with staged rollouts.',
-      projects: [
-        { name: 'Route optimization', detail: 'VROOM by default in route creation, per-address service times and capacity rules for heavy supplies on motorcycles' },
-        { name: 'Traffic-aware ETAs', detail: 'TomTom traffic feeder for Valhalla, departure-time matrices and a calibration factor against Google Maps' },
-        { name: 'Express fee A/B', detail: 'Delivery fee by customer lifecycle segment behind GrowthBook flags, with a one-switch rollback' },
-        { name: 'Security gate', detail: 'Routing services migrated from Spring Boot 2.7 to 3.5 and dependencies patched to pass the CVE gate' },
-      ],
+      role: 'Full Stack Engineer · Contract',
+      desc: 'Contract engineering for Justo, an online supermarket in Mexico: Java / Spring Boot and Node.js + TypeScript services, Next.js and Python on AWS, shipped behind feature flags with staged rollouts. Project details are confidential.',
     },
     {
       title: 'Chiper',
@@ -127,28 +115,16 @@ export const experience = {
   ],
   es: [
     {
-      title: 'Rappi (vía 1clic)',
+      title: '1clic',
       period: 'Ago 2026 – Presente',
       role: 'Full Stack Engineer · Contrato',
-      desc: 'Plataforma de cuentas por pagar de Rappi Turbo (comercio rápido) en seis países de Latinoamérica: conciliación de facturas de proveedores contra órdenes de compra y recepciones (three-way match). Construyo los flujos de excepción por diferencias de precio y de cantidad, que se gestionan como casos entre Cuentas por Pagar, Compras (CatMan) y Supply. Go (Echo, arquitectura hexagonal), pipeline de calce en Kotlin/JVM, micro-frontends en React 19 + TypeScript, MySQL 8, Kafka, AWS SQS/S3, Redis y Snowflake, con contratos spec-first (OpenAPI 3.1, AsyncAPI).',
-      projects: [
-        { name: 'Ciclo del caso', detail: 'Facturas sin orden de compra: apertura automática, recordatorios, escalamiento a Supply, cierre al enlazar y reapertura si el enlace se deshace' },
-        { name: 'Casos de precio y cantidad', detail: 'Bloqueo de filas y control de concurrencia en MySQL para que aperturas simultáneas nunca dupliquen un caso' },
-        { name: 'Portal de proveedores', detail: 'El proveedor carga su orden de compra; avisos al proveedor y a equipos internos, con piloto por proveedor' },
-        { name: 'Gate de revisión antes del PR', detail: 'Controles deterministas (barrido de reglas, pruebas contra MySQL real, verificación de contratos) y revisores LLM especializados' },
-      ],
+      desc: 'Ingeniería por contrato a través de 1clic: servicios backend en Go y Kotlin, front ends en React + TypeScript, MySQL, Kafka y AWS, con contratos spec-first y un gate de revisión asistido por IA antes de cada PR. Los detalles de los proyectos son confidenciales.',
     },
     {
       title: 'Justo',
       period: 'Ago 2026 – Presente',
-      role: 'Full Stack Engineer · Last Mile · Contrato',
-      desc: 'Logística de última milla de Justo, supermercado en línea en México: planeación de rutas, ETAs de entrega, herramientas para conductores y precio del envío. Microservicios en Java / Spring Boot, BFFs en Node.js + TypeScript, back-office en Next.js y servicios en Python, sobre AWS (EKS, DynamoDB, SNS/SQS) con OpenTelemetry y flags de GrowthBook. Trabajo con agentes de código orquestados y despliego detrás de flags con activación gradual.',
-      projects: [
-        { name: 'Optimización de rutas', detail: 'VROOM por defecto al crear rutas, tiempos de servicio por dirección y reglas de capacidad para insumos pesados en motos' },
-        { name: 'ETAs con tráfico', detail: 'Feeder de tráfico TomTom para Valhalla, matrices con hora de salida y factor de calibración contra Google Maps' },
-        { name: 'A/B del fee Express', detail: 'Costo de envío por segmento de ciclo de vida del cliente detrás de flags de GrowthBook, con reversa en un solo switch' },
-        { name: 'Gate de seguridad', detail: 'Servicios de ruteo migrados de Spring Boot 2.7 a 3.5 y dependencias parchadas para pasar el gate de CVEs' },
-      ],
+      role: 'Full Stack Engineer · Contrato',
+      desc: 'Ingeniería por contrato para Justo, supermercado en línea en México: servicios en Java / Spring Boot y Node.js + TypeScript, Next.js y Python sobre AWS, desplegados detrás de feature flags con activación gradual. Los detalles de los proyectos son confidenciales.',
     },
     {
       title: 'Chiper',
