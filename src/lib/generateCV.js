@@ -19,8 +19,8 @@ const i18nData = {
   en: {
     role: 'Senior Full Stack Engineer  |  Backend & AI-Agentic Development',
     contactLines: [
-      'abytecorp@gmail.com  |  +57 322 312 1409  |  brayanmurcia.lat  |  Colombia',
-      'linkedin.com/in/brayan-murcia-sanchez-51121a95  |  github.com/AbyteQuantic  |  English B1  |  15+ years',
+      'abytecorp@gmail.com  |  +57 322 312 1409  |  Colombia  |  English B1  |  15+ years',
+      'Online CV & portfolio: brayanmurcia.lat  |  linkedin.com/in/brayan-murcia-sanchez-51121a95  |  github.com/AbyteQuantic',
     ],
     links: {
       site: { text: 'brayanmurcia.lat', url: 'https://www.brayanmurcia.lat' },
@@ -126,11 +126,11 @@ const i18nData = {
   es: {
     role: 'Senior Full Stack Engineer  |  Backend y Desarrollo Agéntico con IA',
     contactLines: [
-      'abytecorp@gmail.com  |  +57 322 312 1409  |  brayanmurcia.lat  |  Colombia',
-      'linkedin.com/in/brayan-murcia-sanchez-51121a95  |  github.com/AbyteQuantic  |  Inglés B1  |  15+ años',
+      'abytecorp@gmail.com  |  +57 322 312 1409  |  Colombia  |  Inglés B1  |  15+ años',
+      'CV y portafolio web: brayanmurcia.lat  |  linkedin.com/in/brayan-murcia-sanchez-51121a95  |  github.com/AbyteQuantic',
     ],
     links: {
-      site: { text: 'brayanmurcia.lat', url: 'https://www.brayanmurcia.lat' },
+      site: { text: 'brayanmurcia.lat', url: 'https://www.brayanmurcia.lat/es' },
       linkedin: { text: 'linkedin.com/in/brayan-murcia-sanchez-51121a95', url: 'https://www.linkedin.com/in/brayan-murcia-sanchez-51121a95/' },
       github: { text: 'github.com/AbyteQuantic', url: 'https://github.com/AbyteQuantic' },
       email: { text: 'abytecorp@gmail.com', url: 'mailto:abytecorp@gmail.com' },
