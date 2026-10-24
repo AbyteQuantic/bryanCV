@@ -31,10 +31,11 @@ const i18nData = {
     },
     metaTitle: 'Brayan Murcia - Senior Full Stack Engineer - CV',
     summaryTitle: 'Professional Summary',
-    summary: 'Full Stack Engineer with 15+ years building backend systems and the products on top of them, mostly in Go, Java/Kotlin and Node.js/TypeScript with React, on AWS and GCP. I build with AI agents as part of everyday engineering: orchestrated coding agents, automated review gates before every PR and spec-first contracts, which lets me ship more without lowering the bar. Today I work as a contractor through 1clic and for Justo, an online supermarket in Mexico. Before that I spent nearly 7 years at Chiper, a Series B B2B marketplace in Colombia, Mexico and Brazil, growing from Backend Engineer to QA Automation Lead to Senior Full Stack Engineer & DevOps Lead, where I led the e-commerce re-platforming in Go. That path is why I test what I build and take it to production myself.',
+    summary: 'Senior software engineer with 15+ years in technology, specializing in backend and full stack development with Go, Java/Kotlin, Node.js/TypeScript and React. Experienced in cloud-native architecture, microservices, distributed systems and event-driven applications on AWS and GCP. Led a zero-downtime migration from a legacy monolith to Go microservices, cut catalog query latency by 45% and owned infrastructure for 50K+ daily transactions at 99.9% uptime. Combines software architecture, technical leadership, DevOps and test automation, and works with AI coding agents behind automated review gates as part of everyday engineering.',
     competenciesTitle: 'Skills',
     skills: [
-      ['Backend & Architecture', 'Go, Java (Spring Boot), Kotlin, Node.js (NestJS, Express), Python. Microservices, REST/gRPC, hexagonal & Clean Architecture, DDD, event-driven design, Saga & Strangler Fig, spec-first APIs (OpenAPI, AsyncAPI).'],
+      ['Backend', 'Go (Golang), Java, Spring Boot, Kotlin, Node.js, NestJS, Express, Python, REST APIs, gRPC, OpenAPI, AsyncAPI.'],
+      ['Software Architecture', 'Microservices, Distributed Systems, Event-Driven Architecture, Domain-Driven Design (DDD), Hexagonal Architecture, Clean Architecture, Saga Pattern, Strangler Fig Pattern.'],
       ['Frontend', 'React, TypeScript, Next.js, micro-frontends, React Query, Ant Design. Mobile: Flutter, React Native.'],
       ['AI-Agentic Development', 'Orchestrated coding agents (Claude Code with subagents, Codex, Cursor), LLM review gates in CI, LLM features in products (Gemini API), prompt engineering.'],
       ['Data & Messaging', 'MySQL, PostgreSQL, DynamoDB, MongoDB, Redis, Elasticsearch, Snowflake, BigQuery. Kafka, AWS SNS/SQS, GCP Pub/Sub.'],
@@ -49,8 +50,8 @@ const i18nData = {
         company: '1clic',
         location: 'Remote',
         bullets: [
-          'Contract full stack engineering: backend services in Go and Kotlin, React + TypeScript front ends, MySQL, Kafka and AWS, with spec-first contracts (OpenAPI, AsyncAPI).',
-          'AI-assisted workflow with a pre-PR gate that combines deterministic checks with specialized LLM reviewers. Project details are confidential.',
+          'Develop backend services using Go, Kotlin, MySQL and Kafka; build React/TypeScript interfaces and define API contracts with OpenAPI and AsyncAPI for AWS-hosted applications.',
+          'Work with orchestrated AI coding agents behind a pre-PR review gate that combines deterministic checks with specialized LLM reviewers.',
         ],
       },
       {
@@ -59,7 +60,7 @@ const i18nData = {
         company: 'Justo',
         location: 'Mexico (Remote)',
         bullets: [
-          'Contract full stack engineering for an online supermarket: Java / Spring Boot and Node.js + TypeScript services, Next.js and Python on AWS (EKS, DynamoDB, SNS/SQS), shipped behind feature flags with staged rollouts. Project details are confidential.',
+          'Develop Java/Spring Boot and Node.js/TypeScript services on AWS (EKS, DynamoDB, SNS/SQS); contribute to Next.js and Python components and support staged deployments using feature flags.',
         ],
       },
       {
@@ -68,10 +69,10 @@ const i18nData = {
         company: 'Chiper',
         location: 'Colombia',
         bullets: [
-          'Led the 2026 e-commerce re-platforming: carved catalog, cart and checkout out of the legacy monolith with the Strangler Fig pattern and async Pub/Sub into new Go services (Clean Architecture, REST/gRPC) on GCP Cloud Run, with zero downtime. Two-developer squad.',
+          'Led a two-engineer team in a zero-downtime migration from a legacy monolith to Go microservices on GCP Cloud Run (2026), applying the Strangler Fig pattern, Clean Architecture, REST/gRPC and Pub/Sub to carve out catalog, cart and checkout.',
           'Migrated the monolith to microservices (LoopBack 3 to NestJS and Go) with saga patterns and zero-downtime deployments for 15K+ active users.',
           'Designed a 4-dimensional catalog visibility system (location, cluster, partner, stock) over MySQL, Elasticsearch and Redis, cutting catalog query latency by 45%.',
-          'Owned GCP infrastructure (Cloud Run, Pub/Sub, GCS), CI/CD and Terraform: 99.9% uptime for 50K+ daily transactions in three countries.',
+          'Owned cloud infrastructure and delivery for services processing 50K+ transactions daily across three countries; maintained 99.9% uptime using GCP (Cloud Run, Pub/Sub, GCS), Terraform and CI/CD.',
           'Introduced AI-assisted development (Claude Code, Cursor) to the team, cutting the feature delivery cycle by 60%.',
         ],
       },
@@ -114,12 +115,12 @@ const i18nData = {
       ['FacturApp (FinTech)', 'DIAN-compliant e-invoicing. UBL 2.1 XML, X.509 signing, automated tax calculations, PDF + WhatsApp delivery. Multi-tenant B2B.'],
       ['bryanCV (AI Portfolio)', 'Intelligent portfolio with AI chatbot (Gemini), recruiter dashboard (Upstash Redis + Recharts), dynamic PDF CV (jsPDF), telemetry, hot lead detection. Next.js 15, Framer Motion, Vercel. Live: brayanmurcia.lat'],
     ],
-    educationTitle: 'Education & Certifications',
+    educationTitle: 'Education',
     education: [
       { title: 'Software Engineering (In Progress)', period: '2026 - Present', detail: 'Universidad Minuto de Dios (UNIMINUTO), Colombia.' },
       { title: 'Systems Engineering (Advanced Studies)', period: '2008 - 2013', detail: 'Corporación Unificada Nacional (CUN), Colombia. 9 semesters completed.' },
       { title: 'Continuous Learning - Platzi (20+ specializations)', period: '2019 - Present', detail: 'Node.js, React, Docker, Python, Data Engineering, AI Fundamentals, Agile, Product Management.' },
-      { title: 'AI Engineering & Cloud Certifications', period: '2024 - Present', detail: 'Claude Code, Cursor, Prompt Engineering, Cloud Architecture (AWS, GCP), IaC (Terraform, K8s).' },
+      { title: 'Professional Development', period: '2024 - Present', detail: 'AI-assisted software development, cloud architecture (AWS, GCP), infrastructure as code (Terraform), Kubernetes.' },
     ],
   },
   es: {
@@ -137,10 +138,11 @@ const i18nData = {
     },
     metaTitle: 'Brayan Murcia - Senior Full Stack Engineer - Hoja de vida',
     summaryTitle: 'Perfil Profesional',
-    summary: 'Full Stack Engineer con más de 15 años construyendo sistemas backend y los productos que corren sobre ellos, sobre todo en Go, Java/Kotlin y Node.js/TypeScript con React, en AWS y GCP. Trabajo con agentes de IA como parte normal de la ingeniería: agentes de código orquestados, gates de revisión automática antes de cada PR y contratos spec-first, lo que me permite entregar más sin bajar el estándar. Hoy trabajo como contractor a través de 1clic y para Justo, supermercado en línea en México. Antes estuve casi 7 años en Chiper, marketplace B2B Serie B en Colombia, México y Brasil, donde pasé de Backend Engineer a QA Automation Lead y luego a Senior Full Stack Engineer & DevOps Lead, liderando la renovación del e-commerce en Go. Por ese camino pruebo lo que construyo y lo llevo a producción yo mismo.',
+    summary: 'Ingeniero de software senior con más de 15 años en tecnología, especializado en desarrollo backend y full stack con Go, Java/Kotlin, Node.js/TypeScript y React. Experiencia en arquitectura cloud-native, microservicios, sistemas distribuidos y aplicaciones event-driven en AWS y GCP. Lideré una migración sin downtime de un monolito legacy a microservicios en Go, reduje la latencia de consultas del catálogo en un 45% y fui responsable de la infraestructura para 50K+ transacciones diarias con 99.9% de uptime. Combino arquitectura de software, liderazgo técnico, DevOps y automatización de pruebas, y trabajo con agentes de código de IA detrás de gates de revisión automática como parte normal de la ingeniería.',
     competenciesTitle: 'Habilidades',
     skills: [
-      ['Backend & Arquitectura', 'Go, Java (Spring Boot), Kotlin, Node.js (NestJS, Express), Python. Microservicios, REST/gRPC, arquitectura hexagonal y Clean Architecture, DDD, diseño event-driven, Saga y Strangler Fig, APIs spec-first (OpenAPI, AsyncAPI).'],
+      ['Backend', 'Go (Golang), Java, Spring Boot, Kotlin, Node.js, NestJS, Express, Python, APIs REST, gRPC, OpenAPI, AsyncAPI.'],
+      ['Arquitectura de Software', 'Microservicios, Sistemas Distribuidos, Arquitectura Event-Driven, Domain-Driven Design (DDD), Arquitectura Hexagonal, Clean Architecture, Patrón Saga, Patrón Strangler Fig.'],
       ['Frontend', 'React, TypeScript, Next.js, micro-frontends, React Query, Ant Design. Móvil: Flutter, React Native.'],
       ['Desarrollo Agéntico con IA', 'Agentes de código orquestados (Claude Code con subagentes, Codex, Cursor), gates de revisión con LLM en CI, funciones con LLM en producto (Gemini API), prompt engineering.'],
       ['Datos & Mensajería', 'MySQL, PostgreSQL, DynamoDB, MongoDB, Redis, Elasticsearch, Snowflake, BigQuery. Kafka, AWS SNS/SQS, GCP Pub/Sub.'],
@@ -155,8 +157,8 @@ const i18nData = {
         company: '1clic',
         location: 'Remoto',
         bullets: [
-          'Ingeniería full stack por contrato: servicios backend en Go y Kotlin, front ends en React + TypeScript, MySQL, Kafka y AWS, con contratos spec-first (OpenAPI, AsyncAPI).',
-          'Flujo de trabajo asistido por IA con un gate antes del PR que combina controles deterministas y revisores LLM especializados. Los detalles de los proyectos son confidenciales.',
+          'Desarrollo servicios backend con Go, Kotlin, MySQL y Kafka; construyo interfaces en React/TypeScript y defino contratos de API con OpenAPI y AsyncAPI para aplicaciones en AWS.',
+          'Trabajo con agentes de código de IA orquestados detrás de un gate de revisión antes del PR que combina controles deterministas y revisores LLM especializados.',
         ],
       },
       {
@@ -165,7 +167,7 @@ const i18nData = {
         company: 'Justo',
         location: 'México (Remoto)',
         bullets: [
-          'Ingeniería full stack por contrato para un supermercado en línea: servicios en Java / Spring Boot y Node.js + TypeScript, Next.js y Python sobre AWS (EKS, DynamoDB, SNS/SQS), desplegados detrás de feature flags con activación gradual. Los detalles de los proyectos son confidenciales.',
+          'Desarrollo servicios en Java/Spring Boot y Node.js/TypeScript sobre AWS (EKS, DynamoDB, SNS/SQS); contribuyo en componentes de Next.js y Python y apoyo despliegues graduales con feature flags.',
         ],
       },
       {
@@ -174,10 +176,10 @@ const i18nData = {
         company: 'Chiper',
         location: 'Colombia',
         bullets: [
-          'Lideré la renovación del e-commerce en 2026: separé catálogo, carrito y checkout del monolito legacy con el patrón Strangler Fig y Pub/Sub asíncrono hacia nuevos servicios en Go (Clean Architecture, REST/gRPC) en GCP Cloud Run, sin downtime. Squad de dos desarrolladores.',
+          'Lideré un equipo de dos ingenieros en una migración sin downtime de un monolito legacy a microservicios en Go sobre GCP Cloud Run (2026), aplicando el patrón Strangler Fig, Clean Architecture, REST/gRPC y Pub/Sub para separar catálogo, carrito y checkout.',
           'Migré el monolito a microservicios (LoopBack 3 a NestJS y Go) con patrones saga y despliegues sin downtime para 15K+ usuarios activos.',
           'Diseñé un sistema de visibilidad de catálogo en 4 dimensiones (ubicación, cluster, partner, stock) sobre MySQL, Elasticsearch y Redis, reduciendo la latencia de consultas en un 45%.',
-          'Responsable de la infraestructura en GCP (Cloud Run, Pub/Sub, GCS), CI/CD y Terraform: 99.9% de uptime para 50K+ transacciones diarias en tres países.',
+          'Responsable de la infraestructura cloud y la entrega de servicios con 50K+ transacciones diarias en tres países; mantuve 99.9% de uptime con GCP (Cloud Run, Pub/Sub, GCS), Terraform y CI/CD.',
           'Introduje el desarrollo asistido por IA (Claude Code, Cursor) en el equipo, reduciendo el ciclo de entrega de features en un 60%.',
         ],
       },
@@ -220,12 +222,12 @@ const i18nData = {
       ['FacturApp (FinTech)', 'Facturación electrónica DIAN. XML UBL 2.1, firma X.509, cálculos fiscales automáticos, entrega PDF + WhatsApp. Multi-tenant B2B.'],
       ['bryanCV (Portafolio IA)', 'Portafolio inteligente con chatbot IA (Gemini), dashboard de reclutadores (Upstash Redis + Recharts), CV PDF dinámico (jsPDF), telemetría, detección de hot leads. Next.js 15, Framer Motion, Vercel. Live: brayanmurcia.lat'],
     ],
-    educationTitle: 'Educación y Certificaciones',
+    educationTitle: 'Educación',
     education: [
       { title: 'Ingeniería de Software (En Curso)', period: '2026 - Presente', detail: 'Universidad Minuto de Dios (UNIMINUTO), Colombia.' },
       { title: 'Ingeniería de Sistemas (Estudios Avanzados)', period: '2008 - 2013', detail: 'Corporación Unificada Nacional (CUN), Colombia. 9 semestres completados.' },
       { title: 'Aprendizaje Continuo - Platzi (20+ especializaciones)', period: '2019 - Presente', detail: 'Node.js, React, Docker, Python, Data Engineering, Fundamentos IA, Agile, Product Management.' },
-      { title: 'Certificaciones IA & Cloud', period: '2024 - Presente', detail: 'Claude Code, Cursor, Prompt Engineering, Arquitectura Cloud (AWS, GCP), IaC (Terraform, K8s).' },
+      { title: 'Desarrollo Profesional', period: '2024 - Presente', detail: 'Desarrollo de software asistido por IA, arquitectura cloud (AWS, GCP), infraestructura como código (Terraform), Kubernetes.' },
     ],
   },
 };

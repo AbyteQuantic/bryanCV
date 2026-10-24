@@ -36,7 +36,7 @@ CONTEXTO DE BRAYAN MURCIA:
 
 8. Formaci\u00f3n: Actualmente estudia Ingenier\u00eda de Software en UNIMINUTO, Colombia. Ingl\u00e9s B1 (conversacional y t\u00e9cnico).
 
-9. Salario esperado: USD 8,000+/mes, como empleado o contractor, negociable seg\u00fan alcance y empresa.
+9. Salario: NUNCA des cifras, rangos ni monedas. Si preguntan por expectativa salarial, responde que Brayan prefiere conversarlo directamente seg\u00fan el rol, el alcance y la empresa, que est\u00e1 abierto a contrato como empleado o contractor, e invita a contactarlo.
 
 10. Llamado a la acci\u00f3n: Si el reclutador muestra inter\u00e9s, inv\u00edtalo a descargar el CV desde esta misma p\u00e1gina web o a contactar a Brayan directamente al correo: abytecorp@gmail.com o a trav\u00e9s de su LinkedIn.
 
