@@ -46,12 +46,12 @@ const i18nData = {
     jobs: [
       {
         title: 'Full Stack Engineer (Contract)',
-        period: 'Aug 2026 - Present',
+        period: 'Aug 2026 - Nov 2026',
         company: '1clic',
         location: 'Remote',
         bullets: [
-          'Develop backend services using Go, Kotlin, MySQL and Kafka; build React/TypeScript interfaces and define API contracts with OpenAPI and AsyncAPI for AWS-hosted applications.',
-          'Work with orchestrated AI coding agents behind a pre-PR review gate that combines deterministic checks with specialized LLM reviewers.',
+          'Developed backend services using Go, Kotlin, MySQL and Kafka; built React/TypeScript interfaces and defined API contracts with OpenAPI and AsyncAPI for AWS-hosted applications.',
+          'Worked with orchestrated AI coding agents behind a pre-PR review gate that combines deterministic checks with specialized LLM reviewers.',
         ],
       },
       {
@@ -153,12 +153,12 @@ const i18nData = {
     jobs: [
       {
         title: 'Full Stack Engineer (Contrato)',
-        period: 'Ago 2026 - Presente',
+        period: 'Ago 2026 - Nov 2026',
         company: '1clic',
         location: 'Remoto',
         bullets: [
-          'Desarrollo servicios backend con Go, Kotlin, MySQL y Kafka; construyo interfaces en React/TypeScript y defino contratos de API con OpenAPI y AsyncAPI para aplicaciones en AWS.',
-          'Trabajo con agentes de código de IA orquestados detrás de un gate de revisión antes del PR que combina controles deterministas y revisores LLM especializados.',
+          'Desarrollé servicios backend con Go, Kotlin, MySQL y Kafka; construí interfaces en React/TypeScript y definí contratos de API con OpenAPI y AsyncAPI para aplicaciones en AWS.',
+          'Trabajé con agentes de código de IA orquestados detrás de un gate de revisión antes del PR que combina controles deterministas y revisores LLM especializados.',
         ],
       },
       {

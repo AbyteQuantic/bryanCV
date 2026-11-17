@@ -66,7 +66,7 @@ export const experience = {
   en: [
     {
       title: '1clic',
-      period: 'Aug 2026 – Present',
+      period: 'Aug 2026 – Nov 2026',
       role: 'Full Stack Engineer · Contract',
       desc: 'Contract engineering through 1clic: backend services in Go and Kotlin, React + TypeScript front ends, MySQL, Kafka and AWS, with spec-first contracts and an AI-assisted review gate before every PR. Project details are confidential.',
     },
@@ -116,7 +116,7 @@ export const experience = {
   es: [
     {
       title: '1clic',
-      period: 'Ago 2026 – Presente',
+      period: 'Ago 2026 – Nov 2026',
       role: 'Full Stack Engineer · Contrato',
       desc: 'Ingeniería por contrato a través de 1clic: servicios backend en Go y Kotlin, front ends en React + TypeScript, MySQL, Kafka y AWS, con contratos spec-first y un gate de revisión asistido por IA antes de cada PR. Los detalles de los proyectos son confidenciales.',
     },

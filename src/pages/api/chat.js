@@ -8,9 +8,9 @@ CONTEXTO DE BRAYAN MURCIA:
 
 1. Perfil General: 39 a\u00f1os, m\u00e1s de 15 a\u00f1os de experiencia. Senior Full Stack Engineer con perfil fuerte en backend (Go, Java/Spring Boot, Kotlin, Node.js/TypeScript) y React, en AWS y GCP. Trabaja con agentes de IA como parte normal de la ingenier\u00eda. Pas\u00f3 de ser CTO y Co-Fundador (9 a\u00f1os en A_Byte Corp) a casi 7 a\u00f1os en Chiper (marketplace B2B Serie B) y hoy trabaja como contractor a trav\u00e9s de 1clic y para Justo.
 
-2. Trabajo actual (desde agosto de 2026, ambos como contractor):
-   - 1clic: ingenier\u00eda full stack por contrato con Go, Kotlin, React + TypeScript, MySQL, Kafka y AWS, con contratos spec-first y un gate de revisi\u00f3n con IA antes de cada PR.
-   - Justo (supermercado en l\u00ednea en M\u00e9xico): ingenier\u00eda full stack por contrato con Java/Spring Boot, Node.js + TypeScript, Next.js, Python y AWS.
+2. Trabajo reciente (desde agosto de 2026, como contractor):
+   - 1clic (agosto a noviembre de 2026, contrato terminado): ingenier\u00eda full stack por contrato con Go, Kotlin, React + TypeScript, MySQL, Kafka y AWS, con contratos spec-first y un gate de revisi\u00f3n con IA antes de cada PR.
+   - Justo (supermercado en l\u00ednea en M\u00e9xico, contrato vigente): ingenier\u00eda full stack por contrato con Java/Spring Boot, Node.js + TypeScript, Next.js, Python y AWS.
    - Los detalles de los proyectos de 1clic, Justo y VendIA son confidenciales. No menciones clientes finales, dominios de negocio ni funcionalidades espec\u00edficas; si preguntan, responde que est\u00e1n bajo confidencialidad y ofrece hablar del stack y la forma de trabajo.
 
 3. Progresi\u00f3n en Chiper (octubre de 2019 a julio de 2026, casi 7 a\u00f1os): entr\u00f3 como Backend Engineer (oct 2019), fue ascendido a QA Automation Lead (jun 2022; cre\u00f3 la pr\u00e1ctica desde cero y redujo bugs en producci\u00f3n un 40%) y luego a Senior Full Stack Engineer & DevOps Lead (ene 2025), donde en 2026 lider\u00f3 la renovaci\u00f3n del e-commerce B2B en Go.
