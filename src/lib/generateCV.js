@@ -65,6 +65,18 @@ const i18nData = {
         ],
       },
       {
+        id: 'vendia',
+        title: 'Founder & CEO',
+        period: 'Mar 2026 - Present',
+        company: 'VendIA (point-of-sale SaaS for small retail in Colombia)',
+        location: 'Remote',
+        bullets: [
+          'Founded and lead VendIA, a point-of-sale SaaS for neighborhood stores, restaurants and small businesses: product, architecture and delivery of a Go API, an offline-first Flutter Android app (local writes, background sync with last-write-wins and idempotent client IDs) and Next.js admin and web apps.',
+          'Built Vendi, the in-app AI assistant on the Gemini API: conversational onboarding with deterministic validation of the model output, voice-driven inventory, orders and recipes, user confirmation before any action runs, and AI cost tracked per customer and per feature.',
+          'Develop with AI coding agents through spec-driven development, guided by a written engineering constitution and automated review gates.',
+        ],
+      },
+      {
         id: 'chiper-senior',
         title: 'Senior Full Stack Engineer & DevOps Lead',
         period: 'Jan 2025 - Jul 2026',
@@ -112,13 +124,12 @@ const i18nData = {
     ],
     projectsTitle: 'Projects',
     projects: [
-      ['VendIA (SaaS POS)', 'Point-of-sale SaaS for neighborhood retail. Go + Flutter + Next.js.'],
       ['bryanCV (AI Portfolio)', 'Portfolio with an AI chatbot (Gemini), recruiter dashboard (Upstash Redis), dynamic PDF CV and telemetry. Next.js on Vercel. Live: brayanmurcia.lat'],
       ['FacturApp (FinTech)', 'Colombian e-invoicing (DIAN): UBL 2.1 XML, X.509 signing, tax calculations, PDF and WhatsApp delivery. Multi-tenant B2B.'],
       ['SiembraCo (AgriTech)', 'Crop rental marketplace with real-time geolocation and WebSocket tracking. NestJS + Python pipeline.'],
       ['Princess XV', 'Interactive event platform with 3D animations (Three.js) and real-time WebSocket voting for 200+ concurrent users.'],
     ],
-    defaultProjects: ['VendIA (SaaS POS)', 'bryanCV (AI Portfolio)'],
+    defaultProjects: ['bryanCV (AI Portfolio)', 'FacturApp (FinTech)'],
     educationTitle: 'Education & Training',
     education: [
       { title: 'Software Engineering (in progress)', period: '2026 - Present', detail: 'Universidad Minuto de Dios (UNIMINUTO), Colombia.' },
@@ -161,6 +172,18 @@ const i18nData = {
           'Justo: desarrollo servicios en Java/Spring Boot y Node.js/TypeScript sobre AWS (EKS, DynamoDB, SNS/SQS); contribuyo en componentes de Next.js y Python y hago despliegues graduales con feature flags.',
           '1clic: construí servicios backend con Go, Kotlin, MySQL y Kafka, definí contratos de API con OpenAPI y AsyncAPI y construí interfaces en React/TypeScript para aplicaciones en AWS.',
           '1clic: trabajé con agentes de código de IA orquestados detrás de un gate de revisión previo al PR que combina controles deterministas y revisores LLM especializados.',
+        ],
+      },
+      {
+        id: 'vendia',
+        title: 'Fundador y CEO',
+        period: 'Mar 2026 - Presente',
+        company: 'VendIA (SaaS de punto de venta para comercios en Colombia)',
+        location: 'Remoto',
+        bullets: [
+          'Fundé y dirijo VendIA, un SaaS de punto de venta para tiendas de barrio, restaurantes y pequeños negocios: producto, arquitectura y entrega de un API en Go, una app Android en Flutter que funciona sin internet (escritura local, sincronización en segundo plano con last-write-wins e IDs idempotentes) y paneles web en Next.js.',
+          'Construí Vendi, el asistente con IA de la app sobre la API de Gemini: onboarding conversacional con validación determinista de la salida del modelo, inventario, pedidos y recetas por voz, confirmación del usuario antes de ejecutar cualquier acción y costo de IA medido por cliente y por función.',
+          'Desarrollo con agentes de código de IA mediante desarrollo guiado por specs, una constitución de ingeniería escrita y gates de revisión automatizados.',
         ],
       },
       {
@@ -211,13 +234,12 @@ const i18nData = {
     ],
     projectsTitle: 'Proyectos',
     projects: [
-      ['VendIA (SaaS POS)', 'SaaS de punto de venta para tiendas de barrio. Go + Flutter + Next.js.'],
       ['bryanCV (Portafolio IA)', 'Portafolio con chatbot de IA (Gemini), dashboard de reclutadores (Upstash Redis), CV en PDF dinámico y telemetría. Next.js en Vercel. En línea: brayanmurcia.lat'],
       ['FacturApp (FinTech)', 'Facturación electrónica DIAN: XML UBL 2.1, firma X.509, cálculo de impuestos, entrega por PDF y WhatsApp. Multi-tenant B2B.'],
       ['SiembraCo (AgriTech)', 'Marketplace de alquiler de cultivos con geolocalización en tiempo real y tracking por WebSocket. NestJS + Python.'],
       ['Princess XV', 'Plataforma interactiva de eventos con animaciones 3D (Three.js) y votación en tiempo real por WebSocket para 200+ usuarios concurrentes.'],
     ],
-    defaultProjects: ['VendIA (SaaS POS)', 'bryanCV (Portafolio IA)'],
+    defaultProjects: ['bryanCV (Portafolio IA)', 'FacturApp (FinTech)'],
     educationTitle: 'Educación y formación complementaria',
     education: [
       { title: 'Ingeniería de Software (en curso)', period: '2026 - Presente', detail: 'Universidad Minuto de Dios (UNIMINUTO), Colombia.' },
