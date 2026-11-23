@@ -67,7 +67,7 @@ const i18nData = {
       {
         id: 'vendia',
         title: 'Founder & CEO',
-        period: 'Mar 2026 - Present',
+        period: 'Jan 2026 - Present',
         company: 'VendIA (point-of-sale SaaS for small retail in Colombia)',
         location: 'Remote',
         bullets: [
@@ -177,7 +177,7 @@ const i18nData = {
       {
         id: 'vendia',
         title: 'Fundador y CEO',
-        period: 'Mar 2026 - Presente',
+        period: 'Ene 2026 - Presente',
         company: 'VendIA (SaaS de punto de venta para comercios en Colombia)',
         location: 'Remoto',
         bullets: [
